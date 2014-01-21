@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PublicacionDePersona
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          publicacion_de_persona
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [id, persona, tipo_publicacion, titulo,  nombre_revista, anio, volumen, numero, es_isi]
+        object_actions:
+          _edit: ~
+        batch_actions:
+          validar_isi: ~
+      filter:  ~
+      form:
+        actions:
+          _list: ~
+          _save: ~
+          _save_and_add: ~
+      edit:    ~
+      new:     ~

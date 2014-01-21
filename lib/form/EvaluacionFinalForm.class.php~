@@ -1,0 +1,275 @@
+<?php
+
+/**
+ * Evaluacion form.
+ *
+ * @package    postulacion_interna
+ * @subpackage form
+ * @author     Miguel Alcaino
+ * @version    SVN: $Id: sfDoctrineFormTemplate.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ */
+class EvaluacionFinalForm extends BaseEvaluacionForm
+{
+  public function configure()
+  {
+    unset($this['persona_sistema_id'], $this['estado'], $this['created_at'], $this['updated_at']);
+    
+    $this->widgetSchema['nota']->setAttribute('size', 3);
+    $this->widgetSchema['nota']->setAttribute('style', 'font-size: 48px;');
+    
+    $this->widgetSchema['recomiendo_adjudicacion'] = new sfWidgetFormChoice(array(
+      'expanded' => true,
+      'choices'  => array(true => 'Sí', false => 'No'),
+    ));
+    
+    $this->widgetSchema['persona_concurso_id'] = new sfWidgetFormInputHidden();
+    
+    
+    //Notas productividad
+    $form_notas_productividad = new sfForm();
+    if($this->getObject()->isNew()){
+      foreach($this->getObject()->getPersonaConcurso()->getConcurso()->getPorcentajesProductividad() as $porcentaje_productividad_concurso){
+        $nota_productividad = new NotaProductividad();
+        $nota_productividad->setEvaluacion($this->getObject());
+        //Calcular promedio de notas de las evaluaciones con estado == 2
+        $suma_notas_formulacion = 0;
+        foreach($this->getObject()->getPersonaConcurso()->getEvaluacionesConEstado(2) as $evaluacion){
+          $nota_productividad1 = $evaluacion->getNotaProductividadByPorcentajeProductividadConcurso($porcentaje_productividad_concurso);
+          $suma_notas_formulacion = $suma_notas_formulacion + $nota_productividad1->getNota();
+        }
+        $promedio_nota_productividad = $suma_notas_formulacion / count($this->getObject()->getPersonaConcurso()->getEvaluacionesConEstado(2));
+        
+        $nota_productividad->setNota(intval($promedio_nota_productividad));
+        $nota_productividad->setPorcentajeProductividadConcurso($porcentaje_productividad_concurso);
+        $form_notas_productividad->embedForm($porcentaje_productividad_concurso->getTipoProductividad(), new NotaProductividadForm($nota_productividad));
+      }
+    }else{
+      foreach($this->getObject()->getNotasProductividad() as $nota_productividad){
+        $form_notas_productividad->embedForm($nota_productividad->getPorcentajeProductividadConcurso()->getTipoProductividad(), new NotaProductividadForm($nota_productividad));
+      }
+    }
+    
+    $this->embedForm('notas_productividad', $form_notas_productividad);
+    //Notas Formulacion
+    $form_notas_archivo_postulacion = new sfForm();
+
+    if($this->getObject()->isNew()){
+    
+      foreach($this->getObject()->getPersonaConcurso()->getConcurso()->getConcursoTipoArchivos() as $concurso_tipo_archivo){
+        $suma_notas_formulacion = 0;
+        //echo $archivo_postulacion->getTipoArchivo().'<br />';
+        if(count($concurso_tipo_archivo->getPorcentajesEvaluacion()) > 1){
+          if($this->getObject()->getPersonaConcurso()->getConcurso()->getAcronimo() == 'di_sello_valorico' || $this->getObject()->getPersonaConcurso()->getConcurso()->getAcronimo() == 'di_artes'){
+            $i = 0;
+            foreach($concurso_tipo_archivo->getPorcentajesEvaluacion() as $porcentaje_evaluacion){
+              $nota_formulacion = new NotaFormulacion();
+              $nota_formulacion->setEvaluacion($this->getObject());
+              $nota_formulacion->setPorcentajeEvaluacion($porcentaje_evaluacion);
+              
+              $suma_notas_formulacion = 0;
+              foreach($this->getObject()->getPersonaConcurso()->getEvaluacionesConEstado(2) as $evaluacion){
+                $nota_formulacion1 = $evaluacion->getNotaFormulacionByAcronimoTipoArchivo($porcentaje_evaluacion->getNombreNota());
+                $suma_notas_formulacion = $suma_notas_formulacion + $nota_formulacion1->getNota();
+              }
+              $promedio_nota_formulacion = $suma_notas_formulacion / count($this->getObject()->getPersonaConcurso()->getEvaluacionesConEstado(2));
+              
+              $nota_formulacion->setNota(intval($promedio_nota_formulacion));
+              $form_notas_archivo_postulacion->embedForm($porcentaje_evaluacion->getNombreNota(), new NotaFormulacionForm($nota_formulacion));
+            }
+          }else{  
+          $i = 0;
+            foreach($concurso_tipo_archivo->getPorcentajesEvaluacion() as $porcentaje_evaluacion){
+              $nota_formulacion = new NotaFormulacion();
+              $nota_formulacion->setEvaluacion($this->getObject());
+              $nota_formulacion->setPorcentajeEvaluacion($porcentaje_evaluacion);
+              $suma_notas_formulacion = 0;
+              foreach($this->getObject()->getPersonaConcurso()->getEvaluacionesConEstado(2) as $evaluacion){
+                
+                $nota_formulacion1 = $evaluacion->getNotaFormulacionByAcronimoTipoArchivo($concurso_tipo_archivo->getTipoArchivo()->getAcronimo().'_'.$i); 
+                $suma_notas_formulacion = $nota_formulacion1->getNota() + $suma_notas_formulacion;
+              }
+              
+              $promedio_nota_formulacion = $suma_notas_formulacion / count($this->getObject()->getPersonaConcurso()->getEvaluacionesConEstado(2));
+              
+              $nota_formulacion->setNota(intval($promedio_nota_formulacion));
+              $form_notas_archivo_postulacion->embedForm($concurso_tipo_archivo->getTipoArchivo()->getAcronimo().'_'.$i++, new NotaFormulacionForm($nota_formulacion));
+            }
+          }
+        }else{
+          foreach($concurso_tipo_archivo->getPorcentajesEvaluacion() as $porcentaje_evaluacion){
+            $nota_formulacion = new NotaFormulacion();
+            $nota_formulacion->setEvaluacion($this->getObject());
+            
+            foreach($this->getObject()->getPersonaConcurso()->getEvaluacionesConEstado(2) as $evaluacion){
+              
+              $nota_formulacion1 = $evaluacion->getNotaFormulacionByAcronimoTipoArchivo($concurso_tipo_archivo->getTipoArchivo()->getAcronimo()); 
+              $suma_notas_formulacion = $nota_formulacion1->getNota() + $suma_notas_formulacion;
+            }
+            $promedio_nota_formulacion = $suma_notas_formulacion / count($this->getObject()->getPersonaConcurso()->getEvaluacionesConEstado(2));
+            $nota_formulacion->setNota(intval($promedio_nota_formulacion));
+            $nota_formulacion->setPorcentajeEvaluacion($porcentaje_evaluacion);
+            $form_notas_archivo_postulacion->embedForm($concurso_tipo_archivo->getTipoArchivo()->getAcronimo(), new NotaFormulacionForm($nota_formulacion));
+          }
+        }
+        /*
+        $nota_formulacion = new NotaFormulacion();
+        $nota_formulacion->setPorcentajeEvaluacion($porcentaje_evaluacion);
+        $nota_archivo_postulacion->setEvaluacion($this->getObject());
+        $form_notas_archivo_postulacion->embedForm($porcentaje_evaluacion->getTipo, new NotaArchivoPostulacionForm($nota_archivo_postulacion));
+        */
+      }
+    }else{
+      $i=0;
+      foreach($this->getObject()->getNotasFormulacion() as $nota_formulacion){
+        if($this->getObject()->getPersonaConcurso()->getConcurso()->getAcronimo() == 'di_sello_valorico' || $this->getObject()->getPersonaConcurso()->getConcurso()->getAcronimo() == 'di_artes'){
+          $form_notas_archivo_postulacion->embedForm($nota_formulacion->getPorcentajeEvaluacion()->getNombreNota(), new NotaFormulacionForm($nota_formulacion));
+        }else{
+        if($nota_formulacion->getPorcentajeEvaluacion()->getConcursoTipoArchivo()->getTipoArchivo()->getAcronimo() == 'definicion_problema_y_solucion'){
+          $form_notas_archivo_postulacion->embedForm($nota_formulacion->getPorcentajeEvaluacion()->getConcursoTipoArchivo()->getTipoArchivo()->getAcronimo().'_'.$i++, new NotaFormulacionForm($nota_formulacion));
+        }else{
+          $form_notas_archivo_postulacion->embedForm($nota_formulacion->getPorcentajeEvaluacion()->getConcursoTipoArchivo()->getTipoArchivo()->getAcronimo(), new NotaFormulacionForm($nota_formulacion));
+        }
+        }
+      }
+    }
+    /*
+    else{
+      foreach($this->getObject()->getNotasArchivoPostulacion() as $nota_archivo_postulacion){
+        $form_notas_archivo_postulacion->embedForm($nota_archivo_postulacion->getArchivoPostulacion()->getTipoArchivo()->getAcronimo(), new NotaArchivoPostulacionForm($nota_archivo_postulacion));
+      }
+    } */
+    $this->embedForm('notas_archivos_postulacion', $form_notas_archivo_postulacion);
+    
+    //Ajustes de recursos
+    $form_ajuste_recursos = new sfForm();
+    if($this->getObject()->isNew()){
+    
+      //foreach($this->getObject()->getPersonaConcurso()->getRecursos() as $recurso){
+      //echo $this->getObject()->getPersonaConcurso()->getEvaluacionRecursos()->getId();
+      foreach($this->getObject()->getPersonaConcurso()->getEvaluacionRecursos()->getAjustesRecurso() as $ajuste_recurso){
+        
+        $ajuste_recurso1 = new AjusteRecurso();
+        $ajuste_recurso1->setRecurso($ajuste_recurso->getRecurso());
+        $ajuste_recurso1->setEvaluacion($this->getObject());
+        $ajuste_recurso1->setMontoAprobado($ajuste_recurso->getMontoAprobado());
+        
+        $form_ajustes_detalles_recursos = new sfForm();
+        
+        //foreach($recurso->getDetallesRecurso() as $detalle_recurso){
+        foreach($ajuste_recurso->getAjustesDetalleRecurso() as $ajuste_detalle_recurso){
+          
+          $ajuste_detalle_recurso1 = new AjusteDetalleRecurso();
+          $ajuste_detalle_recurso1->setAjusteRecurso($ajuste_recurso1);
+          $ajuste_detalle_recurso1->setDetalleRecurso($ajuste_detalle_recurso->getDetalleRecurso());
+          $ajuste_detalle_recurso1->setMontoAprobado($ajuste_detalle_recurso->getMontoAprobado());
+          
+          if($ajuste_recurso->getRecurso()->getItemConcurso()->getItem()->getAcronimo() == 'gastos_operacion'){
+            $form_ajuste_detalles_recursos_gastos_operacion = new sfForm();
+            
+            //foreach($detalle_recurso->getDetallesRecursoGastosOperacion() as $detalle_recurso_gasto_operacion){
+            foreach($ajuste_detalle_recurso->getAjustesDetalleRecursoGastosOperacion() as $ajuste_detalle_recurso_gastos_operacion){
+              
+              $ajuste_detalle_recurso_gastos_operacion1 = new AjusteDetalleRecursoGastosOperacion();
+              $ajuste_detalle_recurso_gastos_operacion1->setAjusteDetalleRecurso($ajuste_detalle_recurso1);
+              $ajuste_detalle_recurso_gastos_operacion1->setDetalleRecursoGastosOperacion($ajuste_detalle_recurso_gastos_operacion->getDetalleRecursoGastosOperacion());
+              $ajuste_detalle_recurso_gastos_operacion1->setMontoAprobado($ajuste_detalle_recurso_gastos_operacion->getMontoAprobado());
+              
+              $form_ajuste_detalles_recursos_gastos_operacion->embedForm( $ajuste_detalle_recurso_gastos_operacion->getDetalleRecursoGastosOperacion()->getTipoDeGasto(), new AjusteDetalleRecursoGastosOperacionForm($ajuste_detalle_recurso_gastos_operacion1));
+            }
+            $ajuste_detalle_recurso_form = new AjusteDetalleRecursoForm($ajuste_detalle_recurso1);
+            $ajuste_detalle_recurso_form->embedForm('ajustes_detalles_recursos_gastos_operacion', $form_ajuste_detalles_recursos_gastos_operacion);
+            $form_ajustes_detalles_recursos->embedForm($ajuste_detalle_recurso1->getDetalleRecurso()->getPeriodo(), $ajuste_detalle_recurso_form);
+          }else{
+            $ajuste_detalle_recurso_form = new AjusteDetalleRecursoForm($ajuste_detalle_recurso1);
+            $form_ajustes_detalles_recursos->embedForm($ajuste_detalle_recurso1->getDetalleRecurso()->getPeriodo(), $ajuste_detalle_recurso_form);
+          }
+        }
+        
+        //$form_ajuste_recursos->embedForm($recurso->getItemConcurso()->getItem()->getAcronimo(), new AjusteRecursoForm($ajuste_recurso));
+        $ajuste_recurso_form = new AjusteRecursoForm($ajuste_recurso1);
+        $ajuste_recurso_form->embedForm('ajustes_detalles_recursos', $form_ajustes_detalles_recursos);
+        $form_ajuste_recursos->embedForm($ajuste_recurso1->getRecurso()->getId(), $ajuste_recurso_form);
+        /*
+        $form_ajuste_recursos->embeddedForms[$recurso->getId()]->embedForm('ajustes_detalles_recursos', $form_ajustes_detalles_recursos);
+        $form_ajuste_recursos->embedForm($recurso->getId(), $form_ajuste_recursos->embeddedForms[$recurso->getId()]);
+        */
+      }
+    }else{
+      
+      if( count($this->getObject()->getAjustesRecurso()) == 0 ){
+        
+        foreach($this->getObject()->getPersonaConcurso()->getEvaluacionRecursos()->getAjustesRecurso() as $ajuste_recurso){
+        
+        $ajuste_recurso1 = new AjusteRecurso();
+        $ajuste_recurso1->setRecurso($ajuste_recurso->getRecurso());
+        $ajuste_recurso1->setEvaluacion($this->getObject());
+        $ajuste_recurso1->setMontoAprobado($ajuste_recurso->getMontoAprobado());
+        
+        $form_ajustes_detalles_recursos = new sfForm();
+        
+        //foreach($recurso->getDetallesRecurso() as $detalle_recurso){
+        foreach($ajuste_recurso->getAjustesDetalleRecurso() as $ajuste_detalle_recurso){
+          
+          $ajuste_detalle_recurso1 = new AjusteDetalleRecurso();
+          $ajuste_detalle_recurso1->setAjusteRecurso($ajuste_recurso1);
+          $ajuste_detalle_recurso1->setDetalleRecurso($ajuste_detalle_recurso->getDetalleRecurso());
+          $ajuste_detalle_recurso1->setMontoAprobado($ajuste_detalle_recurso->getMontoAprobado());
+          
+          if($ajuste_recurso->getRecurso()->getItemConcurso()->getItem()->getAcronimo() == 'gastos_operacion'){
+            $form_ajuste_detalles_recursos_gastos_operacion = new sfForm();
+            
+            //foreach($detalle_recurso->getDetallesRecursoGastosOperacion() as $detalle_recurso_gasto_operacion){
+            foreach($ajuste_detalle_recurso->getAjustesDetalleRecursoGastosOperacion() as $ajuste_detalle_recurso_gastos_operacion){
+              
+              $ajuste_detalle_recurso_gastos_operacion1 = new AjusteDetalleRecursoGastosOperacion();
+              $ajuste_detalle_recurso_gastos_operacion1->setAjusteDetalleRecurso($ajuste_detalle_recurso1);
+              $ajuste_detalle_recurso_gastos_operacion1->setDetalleRecursoGastosOperacion($ajuste_detalle_recurso_gastos_operacion->getDetalleRecursoGastosOperacion());
+              $ajuste_detalle_recurso_gastos_operacion1->setMontoAprobado($ajuste_detalle_recurso_gastos_operacion->getMontoAprobado());
+              
+              $form_ajuste_detalles_recursos_gastos_operacion->embedForm( $ajuste_detalle_recurso_gastos_operacion->getDetalleRecursoGastosOperacion()->getTipoDeGasto(), new AjusteDetalleRecursoGastosOperacionForm($ajuste_detalle_recurso_gastos_operacion1));
+            }
+            $ajuste_detalle_recurso_form = new AjusteDetalleRecursoForm($ajuste_detalle_recurso1);
+            $ajuste_detalle_recurso_form->embedForm('ajustes_detalles_recursos_gastos_operacion', $form_ajuste_detalles_recursos_gastos_operacion);
+            $form_ajustes_detalles_recursos->embedForm($ajuste_detalle_recurso1->getDetalleRecurso()->getPeriodo(), $ajuste_detalle_recurso_form);
+          }else{
+            $ajuste_detalle_recurso_form = new AjusteDetalleRecursoForm($ajuste_detalle_recurso1);
+            $form_ajustes_detalles_recursos->embedForm($ajuste_detalle_recurso1->getDetalleRecurso()->getPeriodo(), $ajuste_detalle_recurso_form);
+          }
+        }
+        
+        //$form_ajuste_recursos->embedForm($recurso->getItemConcurso()->getItem()->getAcronimo(), new AjusteRecursoForm($ajuste_recurso));
+        $ajuste_recurso_form = new AjusteRecursoForm($ajuste_recurso1);
+        $ajuste_recurso_form->embedForm('ajustes_detalles_recursos', $form_ajustes_detalles_recursos);
+        $form_ajuste_recursos->embedForm($ajuste_recurso1->getRecurso()->getId(), $ajuste_recurso_form);
+        /*
+        $form_ajuste_recursos->embeddedForms[$recurso->getId()]->embedForm('ajustes_detalles_recursos', $form_ajustes_detalles_recursos);
+        $form_ajuste_recursos->embedForm($recurso->getId(), $form_ajuste_recursos->embeddedForms[$recurso->getId()]);
+        */
+      }
+      }else{
+
+      foreach($this->getObject()->getAjustesRecurso() as $ajuste_recurso){
+      echo "hola";
+        //$form_ajuste_recursos->embedForm($ajuste_recurso->getRecurso()->getItemConcurso()->getItem()->getAcronimo(), new AjusteRecursoForm($ajuste_recurso));
+        $form_ajustes_detalles_recursos = new sfForm();
+        foreach($ajuste_recurso->getAjustesDetalleRecurso() as $ajuste_detalle_recurso){
+          
+          $form_ajuste_gasto_operacion = new sfForm();
+          foreach($ajuste_detalle_recurso->getAjustesDetalleRecursoGastosOperacion() as $ajuste_gasto_operacion){
+            $form_ajuste_gasto_operacion->embedForm($ajuste_gasto_operacion->getDetalleRecursoGastosOperacion()->getTipoDeGasto(), new AjusteDetalleRecursoGastosOperacionForm($ajuste_gasto_operacion));
+          }
+          $ajuste_detalle_recurso_form = new AjusteDetalleRecursoForm($ajuste_detalle_recurso);
+          $ajuste_detalle_recurso_form->embedForm('ajustes_detalles_recursos_gastos_operacion', $form_ajuste_gasto_operacion);
+          $form_ajustes_detalles_recursos->embedForm($ajuste_detalle_recurso->getDetalleRecurso()->getPeriodo(), $ajuste_detalle_recurso_form);
+        }
+        $ajuste_recurso_form = new AjusteRecursoForm($ajuste_recurso);
+        $ajuste_recurso_form->embedForm('ajustes_detalles_recursos', $form_ajustes_detalles_recursos);
+        $form_ajuste_recursos->embedForm($ajuste_recurso->getRecurso()->getId(), $ajuste_recurso_form);
+      }
+    }
+    }
+    $this->embedForm('ajustes_recursos', $form_ajuste_recursos);
+    
+    
+  }
+}

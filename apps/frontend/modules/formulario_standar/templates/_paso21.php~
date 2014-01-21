@@ -1,0 +1,12 @@
+<fieldset class="archivo">
+<legend>Resumen</legend>
+<?php $archivos= $form->getObject()->getArchivosPostulacion();?>
+<?php //include_partial('formulario_standar/documento_subido_descargable', array('archivos' => $form->getObject()->getArchivosPostulacion(), 'indice' => 0))?>
+<?php include_partial('formulario_standar/documento_subido_descargable', array('form' => $form, 'indice' => 'resumen'))?>
+<?php include_partial('formulario_standar/patron_archivo_descargable', array('nombre_archivo' => 'Resumen'))?>
+<label>Seleccione el documento PDF (*) </label><?php echo $form['archivos']['resumen']['ruta']->render()?> <?php echo $form['archivos']['resumen']->renderHiddenFields(false)?>
+<br />
+<span class="ayuda_formulacion">La extensi&oacute;n m&aacute;xima de esta secci&oacute;n es de 1 p&aacute;gina (letra tama&ntilde;o 10,  Verdana).
+Debe indicar claramente los principales puntos que se abordar&aacute;n: objetivos, metodolog&iacute;a y resultados que se espera obtener. Se&ntilde;alar cu&aacute;l es el resultado/proyecci&oacute;n que se espera con la ejecuci&oacute;n del proyecto, por ejemplo, publicar un resultado, preparar un proyecto Innova, Fondef, Fondecyt, Fonide u otro.
+</span>
+</fieldset>

@@ -1,0 +1,15 @@
+<html>
+<head></head>
+<body>
+<span>
+<strong>Estimado investigador:</strong>
+<br />
+Su postulaci&oacute;n ha sido registrada con exito, adem&aacute;s se ha enviado un correo electr&oacute;nico a la Direcci&oacute;n de Investigaci&oacute;n
+notificando que ha finalizado su postulaci&oacute;n.
+<br />
+
+Saluda atte.<br />
+Direcci&oacute;n de Investigaci&oacute;n - PUCV
+</span>
+</body>
+</html>

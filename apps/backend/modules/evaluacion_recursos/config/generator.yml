@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PersonaConcurso
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          persona_concurso_evaluacion_recursos
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: 'Lista de postulaciones sin evaluación de recursos'
+        table_method: getPostulacionesEnviadasYEsperandoEvaluacionRecursos
+        display: [id, concurso, persona, tipo_profesor_director, unidad_academica_director, estado_evaluacion, _evaluadores]
+        fields:
+          tipo_profesor_director:
+            label: Tipo profesor
+          unidad_academica_director:
+            label: 'U. Académica'
+          evaluadores:
+            label: 'Evaluaciones enviadas de:'
+        object_actions:
+          evaluar:
+            label: 'Evaluar recursos'
+            action: evaluar_recursos
+        actions: {}
+        batch_actions: {}
+      filter:
+        display: [concurso_id]
+      form:    ~
+      edit:    ~
+      new:     ~

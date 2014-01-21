@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PersonaConcurso
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          persona_concurso
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [=id,concurso , persona, unidad_academica_director,ruta_pdf_postulacion, _publicaciones_isi_validadas, created_at, updated_at]
+        object_actions:
+          _edit: ~
+          validar_pubs_isi:
+            label: Validar pubs. Isi
+            action: validarIsis
+          validar_proyectos:
+            label: 'Validar proyectos'
+            action: validarProyectos
+      filter:
+        display: [concurso_id, tesista_id, estado, estado_evaluacion, esta_aprobado]
+      form:
+        display: [_concurso, _tesista, estado, titulo, categoria_arte, categoria_arte_otra, _personas_list, _personas_externas_list, archivos, recursos]
+        fields:
+          estado:
+            help: Si el valor es 1, quiere decir que la postulación está en curso. Si el valor es 2, quiere decir que la postulación fue enviada.
+      edit:    ~
+      new:     ~

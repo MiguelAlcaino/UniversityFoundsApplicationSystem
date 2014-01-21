@@ -1,0 +1,4 @@
+all:
+  credentials: [1]
+show:
+  credentials: [[1,2]]

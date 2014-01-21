@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * ArchivoRecurso form.
+ *
+ * @package    postulacion_interna
+ * @subpackage form
+ * @author     Your name here
+ * @version    SVN: $Id: sfDoctrineFormTemplate.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ */
+class ArchivoRecursoBackendForm extends BaseArchivoRecursoForm
+{
+  public function configure()
+  {
+  	unset($this['recurso_id'], $this['created_at'], $this['updated_at']);
+  	
+  	$this->widgetSchema['ruta'] = new sfWidgetFormInputFileEditable(
+  	  array(
+  	    'file_src' => $this->getObject()->getRuta() ? link_to('Descargar Archivo',public_path('uploads/pdfs/'.$this->getObject()->getRuta())) : 'Sin archivo',
+  	    'edit_mode' => true
+  	  )
+  	);
+    
+  	$this->validatorSchema['ruta'] = new sfValidatorFile(array(
+      'path' => sfConfig::get('app_path_subida_archivos'),
+      'required' => false));
+  }
+}

@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * ArchivoPostulacion form.
+ *
+ * @package    postulacion_interna
+ * @subpackage form
+ * @author     Your name here
+ * @version    SVN: $Id: sfDoctrineFormTemplate.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ */
+class ArchivoPostulacionBackendForm extends BaseArchivoPostulacionForm
+{
+  public function configure()
+  {
+    sfApplicationConfiguration::getActive()->loadHelpers(array('Url', 'Tag'));
+    $host = $this->getOption('host');
+  	unset($this['id_tipo_archivo'], $this['id_persona_concurso'], $this['created_at'], $this['updated_at'], $this['id_tipo_archivo']);
+  	
+  	$this->widgetSchema['ruta'] = new sfWidgetFormInputFileEditable(
+  	  array(
+  	    'file_src' => $this->getObject()->getRuta() ? link_to('Descargar Archivo',public_path('uploads/pdfs/'.$this->getObject()->getRuta())) : 'Sin archivo',
+  	    'edit_mode' => true
+  	  )
+  	);
+    
+  	$this->validatorSchema['ruta'] = new sfValidatorFile(array(
+      'path' => sfConfig::get('app_path_subida_archivos'),
+      'required' => false));
+    
+  	$this->validatorSchema['ruta_delete'] = new sfValidatorBoolean();
+  }
+}

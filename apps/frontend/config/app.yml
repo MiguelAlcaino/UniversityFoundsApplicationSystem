@@ -1,0 +1,37 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+#all:
+all:
+  path_subida_cv_pnj: /home/sfprojects/postulacion_interna_di/web/uploads/curriculum_pnj
+  path_lib: /home/sfprojects/postulacion_interna_di/lib
+  path_subida_postulaciones: /home/sfprojects/postulacion_interna_di/web/uploads/postulaciones_pdf
+  path_subida_archivos: /home/sfprojects/postulacion_interna_di/web/uploads/pdfs
+  email_sistema: sistema.proyectos.di@ucv.cl
+  .array:
+    concursos_asociados:
+      di_iniciacion: iniciacion
+      di_artes: artes
+      di_sello_valorico: sello_valorico
+      di_pia: pia
+      di_apoyo_tesis_doctoral: tesis
+  
+    concursos_jerarquizados:
+      di_regular: regular
+      di_artes: artes
+      di_sello_valorico: sello_valorico
+      di_pia: pia
+      di_apoyo_tesis_doctoral: tesis
+  
+    concursos_adscritos:
+      di_regular: regular
+      di_artes: artes
+      di_sello_valorico: sello_valorico
+      di_apoyo_tesis_doctoral: tesis
+      
+    concursos_pnj:
+      di_regular: regular
+      di_iniciacion: iniciacion
+      di_artes: artes
+      di_sello_valorico: sello_valorico  

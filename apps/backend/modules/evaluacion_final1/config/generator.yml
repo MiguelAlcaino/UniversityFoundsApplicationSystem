@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Evaluacion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          evaluacion_evaluacion_final1
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    ~
+      filter:  ~
+      form:
+        actions:
+          volver:
+            label: 'Volver a la lista de postulaciones'
+            action: volver
+          _save:
+            label: 'Guardar'
+          aprobar:
+            label: 'APROBAR'
+          reprobar:
+            label: 'REPROBAR'
+      edit:    ~
+      new:     ~

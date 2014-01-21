@@ -1,0 +1,32 @@
+<script languaje="javascript">
+function togle(opcion){
+
+input_text_otra_categoria = document.getElementById('persona_concurso_categoria_arte_otra');
+if(opcion == 'otra'){
+  input_text_otra_categoria.value = '';
+  input_text_otra_categoria.disabled = false;
+}else{
+  input_text_otra_categoria.value = '';
+  //input_text_otra_categoria.disabled = true;
+  input_text_otra_categoria.readonly = true;
+}
+}
+</script>
+
+<fieldset class="archivo">
+<legend>T&iacute;tulo del proyecto</legend>
+<label>T&iacute;tulo </label> <?php echo $form['titulo']?>
+</fieldset>
+<?php if($form->getObject()->getConcurso()->getAcronimo() == 'di_artes'):?>
+<fieldset class="archivo">
+<legend>Categoría del proyecto</legend>
+<label>Seleccione la categoría</label> <?php echo $form['categoria_arte']?>
+<?php if($form['categoria_arte']->getValue() == 'otra'):?>
+  <?php echo $form['categoria_arte_otra']?>
+<?php else:?>
+    <?php echo $form['categoria_arte_otra']->render(array('disabled'=>'disabled'))?>
+<?php endif;?>
+</fieldset>
+<?php endif;?>
+
+

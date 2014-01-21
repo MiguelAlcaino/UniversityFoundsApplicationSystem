@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Encuesta
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          encuesta
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        esta_publicada:
+          label: ¿Está publicada?
+          help: Indica si la encuesta está activada. No podrá ser editada al publicarla.
+        created_at:
+          label: Creado
+      list:
+        display: [=nombre, esta_publicada, encuestas_respondidas, created_at]
+        fields:
+          encuestas_respondidas:
+            label: Numero de respuestas
+        object_actions:
+          _edit: ~
+          _delete: ~
+          _resultados:
+            label: Ver resultados
+            action: verResultados
+          ir_a_encuesta:
+            label: Ir a encuesta            
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

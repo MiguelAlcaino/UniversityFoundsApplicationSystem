@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * AjusteRecurso form.
+ *
+ * @package    postulacion_interna
+ * @subpackage form
+ * @author     Miguel Alcaino
+ * @version    SVN: $Id: sfDoctrineFormTemplate.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ */
+class AjusteRecursoForm extends BaseAjusteRecursoForm
+{
+  public function configure()
+  {
+    unset($this['evaluacion_id'], $this['recurso_id'], $this['created_at'], $this['updated_at']);
+    
+    $this->widgetSchema['monto_aprobado']->setAttribute('size',7);
+    $this->widgetSchema['monto_aprobado']->setAttribute('class','tooltip');
+    /*
+    $this->validatorSchema['monto_aprobado'] = new sfValidatorInteger(
+      array(
+        'min' => 0,
+        'max' => $this->getObject()->getRecurso()->getTotal()
+      )
+    );
+    */
+    $this->widgetSchema['comentario'] = new sfWidgetFormInputText();
+    $this->widgetSchema['comentario']->setAttribute('class','tooltip');
+  }
+}

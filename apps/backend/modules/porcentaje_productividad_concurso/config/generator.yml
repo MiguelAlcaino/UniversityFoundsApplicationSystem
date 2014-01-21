@@ -1,0 +1,22 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PorcentajeProductividadConcurso
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          porcentaje_productividad_concurso
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [id, concurso, tipo_productividad, porcentaje]
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

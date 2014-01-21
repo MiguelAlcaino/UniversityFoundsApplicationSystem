@@ -1,0 +1,20 @@
+<div class="sf_admin_form_row sf_admin_text">
+<label>Personas PUCV</label>
+<div class="content">
+<?php foreach($form->getObject()->getParticipantesPostulacion() as $participante_postulacion):?>
+  <?php echo $participante_postulacion->getPersona()?> - <?php echo $participante_postulacion->getPersona()->getUnidadAcademica()?> - 
+  <?php switch($participante_postulacion->getTipoParticipante()){
+    case 1:
+      echo 'Director';
+      break;
+    case 2:
+      echo 'Director Alterno';
+      break;
+    case 3:
+      echo 'Co-Investigador';
+      break;
+  }?><br />
+<?php endforeach;?>
+<?php echo link_to('hola','persona/index');?>
+</div>
+</div>

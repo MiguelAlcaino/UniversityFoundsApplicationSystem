@@ -1,0 +1,1 @@
+<?php echo link_to(image_tag('pdf').' Descargar convenio', public_path('uploads/convenios/'.$persona_concurso->getCodigoNumerico().'.pdf'))?>

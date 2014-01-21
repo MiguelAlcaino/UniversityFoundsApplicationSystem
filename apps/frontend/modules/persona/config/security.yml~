@@ -1,0 +1,10 @@
+password1:
+  is_secure: false
+nuevoProfesorNoJerarquizado:
+  is_secure: false
+createPNJ:
+  is_secure: false
+recuperarPassword:
+  is_secure: false
+nuevaPassword:
+  is_secure: false

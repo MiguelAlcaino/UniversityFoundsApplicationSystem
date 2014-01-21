@@ -1,0 +1,2 @@
+<div class="archivos_patrones"> Formato: <?php echo link_to(image_tag('word.gif').'Documento Word', public_path('archivo_patron/'.$nombre_archivo.'.doc')) ?> &nbsp;&nbsp; <?php echo link_to(image_tag('archivogenerico.gif').'Documento Latex', public_path('archivo_patron/'.$nombre_archivo.'.tex')) ?></div>
+<br />

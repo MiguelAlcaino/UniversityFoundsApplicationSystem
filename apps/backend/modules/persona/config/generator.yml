@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Persona
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          persona
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        apellido1:
+          label: Ap. Paterno
+        apellido2:
+          label: Ap. Materno
+      list:
+        title: Lista de Profesores registrados
+        sort: apellido1
+        display: [id, nombre, apellido1, apellido2, tipo_profesor, unidad_academica, _participacion_postulacion]
+        layout: ~
+        params: |
+          %%rut%%-%%dv%% %%nombre%% %%apellido1%% %%apellido2%%
+        max_per_page: 15
+        object_actions:
+          _edit:
+            label: editar
+          postulaciones:
+            label: Postulaciones
+        
+      filter:
+        display: [nombre, apellido1, apellido2, tipo_profesor_id, unidad_academica_id]
+          
+      form:
+        fields:
+          estado_login:
+            help: Si el valor es igual a 0, quiere decir que el profesor no tiene contraseña. Si el campo es 1, el profesor puede ingresar a la plataforma, previo registro de password.
+      edit:    ~
+      new:     ~

@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Concurso
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          concurso
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [id, convocatoria, nombre_concurso]
+        object_actions:
+          crear_csv_presupuesto_aprobado:
+            label: 'Crear csv Ppto. aprobado'
+            action: crearCSVPresupuesto
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

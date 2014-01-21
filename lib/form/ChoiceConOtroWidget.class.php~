@@ -1,0 +1,56 @@
+<?php
+class ChoiceConOtroWidget extends sfWidgetForm
+{
+/**
+* Configures the widget.
+*
+* The widget has one single option:
+*
+* choices: An sfCallable() that returns the choices
+*
+* @see sfWidgetForm
+*/
+protected function configure($options = array(), $attributes = array())
+{
+$this->addRequiredOption('choices');
+}
+
+/**
+* Renders custom HTML
+*
+* @param string $name The name of the choice field
+* @param string $value The selected choice
+* @param array $attributes Ignored.
+* @param array $errors Ignored.
+* @return string
+*/
+public function render($name, $value = null, $attributes = array(),
+$errors = array())
+{
+$choices = $this->getOption('choices')->call();
+
+// build and return HTML
+$result = '';
+$checked ='';
+foreach($choices as $k =>$choice){
+    if($value != null){
+        if($value == $k && $value != null){
+            $checked = 'checked="checked"';
+        }else{
+            $checked = '';
+    }
+    }else{
+        if($k == 1){
+            $checked = 'checked="checked"';
+        }else{
+            $checked = '';
+        }
+    }
+    
+    
+    $result.= '<br /><input type="radio"'.$checked .' value="'.$k.'" name="'.$name.'" />'.$choice.'';
+}
+
+return $result;
+}
+}

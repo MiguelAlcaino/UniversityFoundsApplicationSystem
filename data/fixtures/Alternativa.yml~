@@ -1,0 +1,19 @@
+Alternativa:
+  alternativa111:
+    Pregunta: pregunta11
+    texto_alternativa: alternativa 111
+  alternativa112:
+    Pregunta: pregunta11
+    texto_alternativa: alternativa 112
+  alternativa121:
+    Pregunta: pregunta12
+    texto_alternativa: alternativa 121
+  alternativa122:
+    Pregunta: pregunta12
+    texto_alternativa: alternativa 122
+  alternativa131:
+    Pregunta: pregunta13
+    texto_alternativa: alternativa 131
+  alternativa132:
+    Pregunta: pregunta13
+    texto_alternativa: alternativa 132

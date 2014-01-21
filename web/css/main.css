@@ -1,0 +1,256 @@
+body {
+    background-color: #122448;
+    color: black;
+    font-family: "Lucida Grande",Tahoma,Arial,Verdana,sans-serif;
+    font-size: small;
+}
+
+#header{
+	width: 80%;
+	margin: 0 auto 0 auto;
+	text-align: left;
+    height: 105px;
+}
+
+.logo_pucv{
+    float: left;
+    margin-bottom: 10px;
+}
+
+#titulo{
+    font-size: larger;
+    position: relative;
+    top: 40px;
+    left: 10px;
+    color: white;
+}
+
+#contenido{
+    clear: both;
+	width: 80%;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	background-color: white;
+	padding: 10px;
+	padding-bottom: 40px;
+}
+
+#footer{
+    width: 80%;
+	margin: 0 auto 0 auto;
+	text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+
+#contenido_postulacion{
+	width: 80%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    background-color: #E3F0F6;
+	
+}
+
+#contenido_postulacion thead tr th{
+	border: 1px solid black;
+	
+}
+
+#contenido_etapa table thead tr th{
+	border-collapse: collapse;
+}
+
+#contenido_paso{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+#contenido_paso tr td{
+	padding: 10px;
+}
+
+#footer{
+	
+}
+
+.archivo{
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.archivo legend{
+	font-weight: bolder;
+}
+
+.tabla_recurso{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.tabla_recurso tbody{
+	text-align: left;
+}
+
+.pestana_etapa_seleccionada{
+	background-color: #E3F0F6;
+}
+
+.pestana_etapa_no_seleccionada{
+	background-color: #539ABF;
+}
+
+.centrado{
+	margin: 0 auto;
+}
+
+.concursos{
+	width: 80%;
+	margin: 0 auto 0 auto;
+	border-style: solid;
+  	border-color: gray;
+  	border-width: 1px;
+  	margin-bottom: 15px;
+  	background-color: white;
+  	color: black;
+  	padding-bottom: 15px;
+  	padding-top: 15px;
+}
+
+.concursos h2{
+	position: relative;
+	
+}
+
+.contenedor_usuario{
+	text-align: left;
+}
+
+#tabs_pasos{
+	margin-top: 10px;
+	border-collapse: collapse;
+	width: 90%;
+}
+
+.error_form{
+  font-size: smaller;
+  color: red; 
+}
+
+#tabs_etapas tr{
+    height: 30px;
+}
+.flash_notice{
+  border-style: solid;
+  border-width: 1px;
+  border-color:  gray;
+  color: black;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 50%;
+  background-color: #fcfcc2;
+  font-size: small;
+  text-align: center;
+  padding: 2px;
+}
+
+.flash_notice_login{
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue;
+  color: black;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 50%;
+  background-color: #fcfcc2;
+  font-size: small;
+  font-weight: bolder;
+  text-align: center;
+  padding: 2px;
+}
+
+.flash_error{
+  border-style: solid;
+  border-width: 1px;
+  border-color:  gray;
+  color: black;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 50%;
+  background-color: #fcfcc2;
+  font-size: small;
+  text-align: center;
+  padding: 2px;
+}
+
+.ayuda_formulacion{
+  color: black;
+  font-size: x-small;
+  font-style: italic;
+  text-align: center;
+  padding: 2px;
+}
+
+#menu{
+  margin: 0 auto;
+  width: 400px;
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+#menu li{
+  float: left;
+  padding: 0;
+  font-weight: bold;
+}
+
+#menu a{
+  background-color: #539ABF;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+}
+
+#menu a:hover{
+  padding: 8px;
+  background-color: #E3F0F6;
+  text-decoration: none;
+}
+
+.tabla_de_postulaciones{
+  border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.tabla_de_postulaciones td{
+  border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.tabla_encuesta{
+  width: 100%;
+}
+
+.tabla_encuesta tr td{
+  border-bottom: 1px solid #E2E2E2;
+  border-left: 1px solid #E2E2E2;
+  border-right: 1px solid #E2E2E2;
+  border-top: 1px solid #E2E2E2;
+	border-collapse: collapse;
+	background-color: #F3F3F3;
+	text-align: left;
+}
+
+.tabla_encuesta tr th{
+  padding-top: 20px;
+  text-align: left;
+}
+
+.tabla_encuesta ul{
+  list-style: none;
+}

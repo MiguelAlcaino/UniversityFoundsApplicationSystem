@@ -1,0 +1,24 @@
+<?php
+
+require_once dirname(__FILE__).'/../lib/evaluacionGeneratorConfiguration.class.php';
+require_once dirname(__FILE__).'/../lib/evaluacionGeneratorHelper.class.php';
+
+/**
+ * evaluacion actions.
+ *
+ * @package    postulacion_interna
+ * @subpackage evaluacion
+ * @author     Miguel Alcaino
+ * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ */
+class evaluacionActions extends autoEvaluacionActions
+{
+  public function executeEvaluar(sfWebRequest $request){
+    if($evaluacion = Doctrine_Core::getTable('Evaluacion')->findOneByPersonaSistemaIdAndPersonaConcursoId($this->getUser()->getAttribute('id_persona'), $request->getParameter('id'))){
+      $this->redirect('evaluacion1/edit?id='.$evaluacion->getId());
+    }else{
+      $this->redirect('evaluacion1/new?postulacion_id='.$request->getParameter('id'));
+    }
+    
+  }
+}

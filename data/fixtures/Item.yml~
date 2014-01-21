@@ -1,0 +1,22 @@
+Item:
+  gastos_de_operacion:
+    nombre_item: Gastos de Operacion
+    tiene_subitem: false
+  alumno_ayudante:
+    nombre_item: Alumno Ayudante
+    tiene_subitem: false
+  personal_tecnico_y_apoyo:
+    nombre_item: Personal tecnico y/o apoyo
+    tiene_subitem: true
+  viajes_y_viaticos:
+    nombre_item: Viajes y viaticos
+    tiene_subitem: false
+  inscripciones_a_congresos:
+    nombre_item: Inscripciones a congresos
+    tiene_subitem: false
+  inscripciones_a_eventos_de_difusion:
+    nombre_item: Inscripciones a enventos de difusion de resultados
+    tiene_subitem: false
+  inscripciones_a_congresos_u_otros_eventos_de_difusion:
+    nombre_item: Incripciones a congresos u otros eventos de difusion
+    tiene_subitem: false

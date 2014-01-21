@@ -1,0 +1,12 @@
+<?php $archivos = $form->getObject()->getArchivosPostulacion();?>
+<fieldset class="archivo">
+<legend>Trabajo adelantado</legend>
+<?php include_partial('formulario_standar/documento_subido_descargable', array('form' => $form, 'indice' => 'trabajo_adelantado'))?>
+<?php include_partial('formulario_standar/patron_archivo_descargable', array('nombre_archivo' => 'Trabajo_adelantado'))?>
+<label>Seleccione el documento PDF </label><?php echo $form['archivos']['trabajo_adelantado']['ruta']?> <?php echo $form['archivos']['trabajo_adelantado']->renderHiddenFields(false)?>
+<br />
+<span class="ayuda_formulacion">
+La extensi&oacute;n m&aacute;xima de esta secci&oacute;n es de 1 p&aacute;gina (letra tama&ntilde;o 10, Verdana).
+Si corresponde, resuma los principales resultados de sus trabajos anteriores sobre el tema, sobre todo si tiene relaci&oacute;n con alg&uacute;n otro proyecto financiado por la Direcci&oacute;n de Investigaci&oacute;n.
+</span>
+</fieldset>

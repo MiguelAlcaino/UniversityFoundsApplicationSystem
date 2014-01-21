@@ -1,0 +1,5 @@
+logout:
+  is_secure: false
+all:
+  credentials: [1]
+

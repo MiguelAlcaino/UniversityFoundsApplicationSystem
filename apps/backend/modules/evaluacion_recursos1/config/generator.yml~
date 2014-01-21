@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Evaluacion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          evaluacion_evaluacion_recursos1
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    ~
+      filter:  ~
+      form:
+        actions:
+          list:
+            label: 'Volver a la lista de proyectos sin evaluación de recursos hola'
+            action: listaPostulacionesSinEvaluacionRecursos
+          _save:
+            label: 'Guardar Evaluación'
+          enviar_evaluacion:
+            label: 'Enviar Evaluación'
+      edit:    ~
+      new:     ~

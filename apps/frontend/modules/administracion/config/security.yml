@@ -1,0 +1,4 @@
+proyectosPostulados:
+  is_secure: false
+generarCsvTipoProyecto:
+  is_secure: false

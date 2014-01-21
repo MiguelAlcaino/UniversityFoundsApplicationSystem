@@ -1,0 +1,589 @@
+DoctoradoAcreditado:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    nombre: {type: string(255), notnull: true}
+
+Tesista:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    doctorado_acreditado_id: {type: integer, notnull: true}
+    rut: {type: integer, notnull: true, unique: true}
+    dv: {type: string(1), notnull: true}
+    nombre: {type: string(255), notnull: true}
+    apellido1: {type: string(255), notnull: true}
+    apellido2: {type: string(255)}
+    sexo: {type: string(1), notnull: false}
+    telefono: {type: string(255)}
+    email: {type: string(255), notnull: true}
+    ruta_notas: {type: string(255), notnull: false}
+  relations:
+    DoctoradoAcreditado: {local: doctorado_acreditado_id, foreign: id, foreignAlias: Tesistas}
+    
+PersonaExterna:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    rut: {type: integer, notnull: true, unique: true}
+    dv: {type: string(1), notnull: true}
+    nombre: {type: string(255), notnull: true}
+    apellido1: {type: string(255), notnull: true}
+    apellido2: {type: string(255)}
+    nombre_universidad: {type: string(255), notnull: true}
+    telefono: {type: string(255)}
+    email: {type: string(255), notnull: true}
+    jerarquia: {type: string(255), notnull: true}
+    compromiso_contractual_con_la_universidad: {type: string(255), notnull: true}
+
+ParticipanteExterno:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_externa_id: {type: integer, notnull: true}
+    persona_concurso_id: {type: integer, notnull: true}
+  relations:
+    PersonaExterna: {local: persona_externa_id, foreign: id, onDelete: CASCADE}
+    PersonaConcurso: {local: persona_concurso_id, foreign: id, foreignAlias: ParticipantesExternos, onDelete: CASCADE}
+    
+TipoProfesor:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    tipo: {type: string(255), notnull: true}
+    numero_tipo: {type: integer(1), notnull: true} #1 Asociado, 2: Jerarquizado, 3: Adscrito, 4: No Jerarquizado
+  relations:
+    Concursos:
+      class: Concurso
+      refClass: RestriccionConcurso
+      local: tipo_profesor_id
+      foreign: concurso_id
+      foreignAlias: TiposProfesores
+    
+RestriccionConcurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    tipo_profesor_id: {type: integer, notnull: false}
+    concurso_id: {type: integer, notnull: true}
+  relations:
+    TipoProfesor: {local: tipo_profesor_id, foreign: id, foreignAlias: RestriccionesConcurso, onDelete: CASCADE}
+    Concurso: {local: concurso_id, foreign: id, foreignAlias: RestriccionesConcurso}
+    
+Facultad:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    orden: {type: integer, notnull: true}
+    nombre: {type: string(255), notnull: true}
+    
+UnidadAcademica:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    facultad_id: {type: integer, notnull: false}
+    nombre: {type: string(255), notnull: true}
+  relations:
+    Facultad: {local: facultad_id, foreign: id, foreignAlias: UnidadesAcademicas}
+    
+Persona:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    tipo_profesor_id: {type: integer, notnull: true}
+    unidad_academica_id: {type: integer, notnull: true}
+    rut: {type: integer, notnull: true, unique: true}
+    dv: {type: string(1), notnull: true}
+    nombre: {type: string(255), notnull: true}
+    apellido1: {type: string(255), notnull: true}
+    apellido2: {type: string(255)}
+    sexo: {type: string(1), notnull: false, default: 'M'}
+    telefono: {type: string(255)}
+    email: {type: string(255), notnull: false, unique: true}
+    password: {type: string(255) }
+    token_recuperar_password: {type: string(255), notnull: false}
+    estado_login: {type: integer(1), default: 0, notnull: true}
+  relations:
+    TipoProfesor: {local: tipo_profesor_id, foreign: id, foreignAlias: Personas}
+    UnidadAcademica: {local: unidad_academica_id, foreign: id, foreignAlias: Personas}
+    PersonaConcursos:
+      class: PersonaConcurso
+      refClass: ParticipantePostulacion
+      local: persona_id
+      foreign: persona_concurso_id
+      foreignAlias: Personas
+
+Encuesta:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    nombre: {type: string(255), notnull: true}
+    fecha_inicio: {type: timestamp, notnull: true}
+    fecha_termino: {type: timestamp, notnull: true}
+    esta_publicada: {type: boolean, default: false}
+    
+Pregunta:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    encuesta_id: {type: integer, notnull: true}
+    texto_pregunta: {type: string(255), notnull: true}
+  relations:
+    Encuesta: {local: encuesta_id, foreign: id, foreignAlias: Preguntas, onDelete: CASCADE}
+
+Alternativa:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    pregunta_id: {type: integer, notnull: true}
+    texto_alternativa: {type: string(255), notnull: true}
+  relations:
+    Pregunta: {local: pregunta_id, foreign: id, foreignAlias: Alternativas, onDelete: CASCADE}
+
+SesionEncuesta:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_id: {type: integer, notnull: false}
+    encuesta_id: {type: integer, notnull: true}
+    fecha_inicio_sesion: {type: timestamp, notnull: true}
+  relations:
+    Persona: {local: persona_id, foreign: id, foreignAlias: SesionesEncuesta, onDelete: CASCADE}
+    Encuesta: {local: encuesta_id, foreign: id, foreignAlias: SesionesEncuesta}
+
+RespuestaAlternativa:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    sesion_encuesta_id: {type: integer, notnull: true}
+    alternativa_id: {type: integer, notnull: true}
+  relations:
+    SesionEncuesta: {local: sesion_encuesta_id, foreign: id, foreignAlias: Respuestas}
+    Alternativa: {local: alternativa_id, foreign: id, foreignAlias: Respuestas}
+
+ArchivoDePersona:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_id: {type: integer, notnull: true}
+    tipo_archivo: {type: integer(1), notnull: true}
+    ruta: {type: string(255), notnull: false}
+  relations:
+    Persona: {local: persona_id, foreign: id, foreignAlias: AchivosDePersona, onDelete: CASCADE}
+    
+ProyectoDePersona:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_id: {type: integer, notnull: true}
+    tipo_proyecto: {type: integer(1), notnull: true}
+    fuente: {type: string(255), notnull: true}
+    tipo_participacion: {type: integer(1), notnull: true}
+    concurso: {type: string(255), notnull: false}
+    codigo: {type: string(255), notnull: true}
+    titulo: {type: string(255), notnull: true}
+    es_valido: {type: boolean, default: false, notnull: true}
+  relations:
+    Persona: {local: persona_id, foreign: id, foreignAlias: Proyectos}
+
+DivulgacionDePersona:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_id: {type: integer, notnull: true}
+    texto_divulgacion: {type: string(255), notnull: false}  
+  relations:
+    Persona: {local: persona_id, foreign: id, foreignAlias: Divulgaciones}
+
+ObraDePersona:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_id: {type: integer, notnull: true}
+    texto_obra: {type: string(255), notnull: true}
+  relations:
+    Persona: {local: persona_id, foreign: id, foreignAlias: Obras}
+
+PublicacionDePersona:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_id: {type: integer, notnull: true}
+    tipo_publicacion: {type: string(20), notnull:true}
+    nombre_revista: {type: string(255), notnull: true}
+    titulo_publicacion: {type: string(255), notnull:true}
+    anio: {type: integer}
+    volumen: {type: integer}
+    numero: {type: integer}
+    es_isi: {type: boolean, default: false, notnull: true} #Campo usado en el administrador para validar que una publicacion es realmente ISI o no.
+  relations:
+    Persona: {local: persona_id, foreign: id, foreignAlias: Publicaciones}
+
+LibroDePersona:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_id: {type: integer, notnull: true}
+    nombre: {type: string(255), notnull: true}
+    editorial: {type: string(255), notnull:true}
+    anio: {type: integer, notnull: true}
+  relations:
+    Persona: {local: persona_id, foreign: id, foreignAlias: Libros}
+    
+CapituloLibroDePersona:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_id: {type: integer, notnull: true}
+    nombre_libro: {type: string(255), notnull: true}
+    nombre_capitulo: {type: string(255), notnull: true}
+    editorial: {type: string(255), notnull:true}
+    anio: {type: integer, notnull: true}
+  relations:
+    Persona: {local: persona_id, foreign: id, foreignAlias: CapitulosDeLibros}
+
+Convocatoria:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    anio: {type: integer, notnull: true}
+    nombre: {type: string(255)}
+    esta_vigente: {type: boolean, default: false}
+    fecha_firma_convenio: {type: timestamp, notnull: false}
+    fecha_termino_convenio: {type: timestamp, notnull: false}
+    
+Concurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    convocatoria_id: {type: integer}
+    nombre_concurso: {type: string(255), notnull: true}
+    acronimo: {type: string(255), notnull: true}
+    monto_maximo: {type: integer, notnull: true}
+    inicio_postulacion: {type: timestamp}
+    termino_postulacion: {type: timestamp}
+    duracion: {type: integer, default: 9}
+    porcentaje_formulacion: {type: integer, default: 0, notnull: true}
+    porcentaje_productividad: {type: integer, default: 0, notnull: true}
+    maximo_isis: {type: integer, default: 0, notnull: true}
+    maximo_proyectos_fondecyt: {type: integer, default: 0, notnull: true}
+    maximo_proyectos_internos: {type: integer, default: 0, notnull: true}
+    
+  relations:
+    Convocatoria: {local: convocatoria_id, foreign: id, foreignAlias: Concursos}
+    Items:
+      class: Item
+      refClass: ItemConcurso
+      local: concurso_id
+      foreign: item_id
+      foreignAlias: Concursos
+    TiposProfesores:
+      class: TipoProfesor
+      refClass: RestriccionConcurso
+      local: concurso_id
+      foreign: tipo_profesor_id
+      foreignAlias: TiposProfesores
+    TipoArchivos:
+      class: TipoArchivo
+      refClass: ConcursoTipoArchivo
+      local: concurso_id
+      foreign: tipo_archivo_id
+      foreignAlias: Concursos
+
+CompromisoDeConcurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    concurso_id: {type: integer, notnull: true}
+    tipo: {type: integer, notnull: false, default: 1}# 1 para todos los concursos inclyecndo el pia regular, 2 para pia inciacion
+    orden: {type: integer, notnull: true}
+    texto: {type: string, notnull: true}
+  relations:
+    Concurso: {local: concurso_id, foreign: id, foreignAlias: Compromisos, onDelete: CASCADE}
+
+PorcentajeProductividadConcurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    concurso_id: {type: integer, notnull: true}
+    tipo_productividad: {type: string(255), notnull: true} #1: proyectos externos, 2: proyectos internos, 3: p. isi, 4: p. scielo, 5: p. otra, 6: divulgación, 7: libros, 8:obras
+    porcentaje: {type: integer, default: 0, notnull: true}
+  relations:
+    Concurso: {local: concurso_id, foreign: id, foreignAlias: PorcentajesProductividad}
+
+Item:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    nombre_item: {type: string(255), notnull: true}
+    acronimo: {type: string(255), notnull: true}
+    tiene_subitem: {type: boolean, default: false}
+
+Subitem:
+  actAs: {Timestampable: ~}
+  columns:
+      id: {type: integer, primary: true, autoincrement: true}
+      item_id: {type: integer, notnull: true}
+      nombre_subitem: {type: string(255), notnull: true}
+  relations:
+      Item: {local: item_id, foreign: id, foreignAlias: Subitems}
+
+      
+ItemConcurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    concurso_id: {type: integer, notnull: true}
+    item_id: {type: integer, notnull: true}
+    monto_maximo: {type: integer, notnull: false}
+    porcentaje_maximo: {type: integer, notnull: false}
+    acronimo_recurso: {type: string(255)}
+  relations:
+    Concurso: {local: concurso_id, foreign: id}
+    Item: {local: item_id, foreign: id}
+
+ParticipantePostulacion:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_id: {type: integer, notnull: true}
+    persona_concurso_id: {type: integer, notnull: true}
+    email: {type: string(255), notnull: false}
+    tipo_participante: {type: integer(1), notnull: true}
+  relations:
+    Persona: {local: persona_id, foreign: id, foreignAlias: ParticipantesPostulacion}
+    PersonaConcurso: {local: persona_concurso_id, foreign: id, foreignAlias: ParticipantesPostulacion, onDelete: CASCADE}
+
+PersonaConcurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    concurso_id: {type: integer, notnull: true}
+    tesista_id: {type: integer, notnull: false}
+    fecha_envio: {type: timestamp}
+    estado: {type: integer, default: 0} #1: Postulación en curso, 2: Postulación enviada
+    titulo: {type: string(255)}
+    categoria_arte: {type: string(255), notnull: false} # Para creación artistica 2013
+    categoria_arte_otra: {type: string(255), notnull: false}
+    ruta_pdf_postulacion: {type: string(255), notnull: false}
+    estado_evaluacion: {type: integer, notnull: true, default: 0} #0: Sin evaluar, 1: En evaluacion, 2: evaluación en espera de evaluación de recursos, 3: evaluación en espera de evalación final, 4: Evaluación completada.
+    esta_aprobado: {type: boolean, default: false}
+    codigo_proyecto: {type: string(40), notnull: false}
+    codigo_numerico: {type: integer, notnull: false}
+  relations:
+    Concurso: {local: concurso_id, foreign: id, foreignAlias: Postulaciones}
+    Tesista: {local: tesista_id, foreign: id, onDelete: CASCADE}
+    ItemsConcurso:
+      class: ItemConcurso
+      refClass: Recurso
+      local: persona_concurso_id
+      foreign: item_concurso_id
+      foreignAlias: PersonaConcursos
+    Personas:
+      class: Persona
+      refClass: ParticipantePostulacion
+      local: persona_concurso_id
+      foreign: persona_id
+      foreignAlias: PersonaConcursos
+    PersonasExternas:
+      class: PersonaExterna
+      refClass: ParticipanteExterno
+      local: persona_concurso_id
+      foreign: persona_externa_id
+      foreignAlias: PersonaConcursos
+
+ConvenioDesempenoPostulacion:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_concurso_id: {type: integer, notnull: true, unique: true}
+    fecha_convenio: {type: timestamp}
+    ruta_convenio: {type: string(255), notnull: false}
+  relations:
+    PersonaConcurso: {local: persona_concurso_id, foreign: id, foreignAlias: ConveniosDesempeno}
+    
+CompromisoDeConvenio:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    convenio_desempeno_postulacion_id: {type: integer, notnull: true}
+    orden: {type: integer, notnull: true}
+    texto_compromiso: {type: string, notnull: true}
+  relations: 
+    ConvenioDesempenoPostulacion: {local: convenio_desempeno_postulacion_id, foreign: id, foreignAlias: CompromisosDeConvenio, onDelete: CASCADE}
+
+Recurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_concurso_id: {type: integer, notnull: true}
+    item_concurso_id: {type: integer, notnull: true}
+    total: {type: integer, notnull: true, default: 0}
+  relations:
+    ItemConcurso: {local: item_concurso_id, foreign: id, foreignAlias: Recursos}
+    PersonaConcurso: {local: persona_concurso_id, foreign: id, foreignAlias: Recursos, onDelete: CASCADE}
+
+DetalleRecursoGastosOperacion:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    detalle_recurso_id: {type: integer, notnull: true}
+    tipo_de_gasto: {type: integer, notnull: true} #1: Insumos computacionales, 2: Reactivos e insumos de laboratorio, 3: Libros y artpículos de librería, 4: Actividades de difusión(Solo Sello Valórico), 5: Otros
+    monto: {type: integer, notnull: true, default: 0}
+  relations:
+    DetalleRecurso: {local: detalle_recurso_id, foreign: id, foreignAlias: DetallesRecursoGastosOperacion, onDelete: CASCADE}
+
+DetalleRecurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    recurso_id: {type: integer, notnull: true}
+    periodo: {type: integer, notnull: true}
+    monto: {type: integer, notnull: true, default: 0}
+  relations:
+    Recurso: {local: recurso_id, foreign: id, foreignAlias: DetallesRecurso, onDelete: CASCADE}
+
+ArchivoRecurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    recurso_id: {type: integer, notnull:true}
+    ruta: {type: string(255)}
+  relations:
+    Recurso: {local: recurso_id, foreign: id, foreignAlias: ArchivosRecurso, onDelete: CASCADE}
+
+ConcursoTipoArchivo:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    concurso_id: {type: integer}
+    tipo_archivo_id: {type: integer}
+  relations:
+    Concurso: {local: concurso_id, foreign: id, foreignAlias: ConcursoTipoArchivos}
+    TipoArchivo: {local: tipo_archivo_id, foreign: id, foreignAlias: ConcursoTipoArhivos}
+
+PorcentajeEvaluacion: #Tabla creada para solucionar el problema de dividir en dos el definicion del problema y solución.
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    concurso_tipo_archivo_id: {type: integer, notnull: true}
+    numero: {type: integer, notnull: true, default: 1} #1 Definición del problema, 2: Solución (Para acronimo == "definicion_problema_y_solucion"). En Sello y Creación artistica se deben crear nuevos porcentajes asociados a la MARCO TEORICO(solución parche). 1: Originalidad, 2: Calidad Propuesta, 3: Impacto del desarrollo, 4: Programa de trabajo
+    porcentaje_evaluacion: {type: integer, notnull: false, default: 0}
+    nombre_nota: {type: string(40), notnull: false}
+  relations:
+    ConcursoTipoArchivo: {local: concurso_tipo_archivo_id, foreign: id, foreignAlias: PorcentajesEvaluacion}
+    
+
+TipoArchivo:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    nombre_documento: {type: string(255), notnull: true}
+    acronimo: {type: string(255), notnull: false}
+  relations:
+    Concursos:
+      class: Concurso
+      refClass: ConcursoTipoArchivo
+      local: tipo_archivo_id
+      foreign: concurso_id
+      foreignAlias: TipoArchivos
+
+ArchivoPostulacion:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    id_tipo_archivo: {type: integer, notnull: true}
+    id_persona_concurso: {type: integer, notnull:true}
+    ruta: {type: string(255)}
+  relations:
+    TipoArchivo: {local: id_tipo_archivo, foreign: id, foreignAlias: Archivos}
+    PersonaConcurso: {local: id_persona_concurso, foreign: id, foreignAlias: ArchivosPostulacion, onDelete: CASCADE}
+    
+
+PersonaSistema:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    perfil: {type: integer, notnull: true, default: 2} #1: admin, 2:evaluador, 3: evaluador final
+    rut: {type: integer, notnull: true, unique: true}
+    dv: {type: string(1), notnull: true}
+    nombre: {type: string(255), notnull: true}
+    apellido1: {type: string(255), notnull: true}
+    apellido2: {type: string(255)}
+    telefono: {type: string(255)}
+    email: {type: string(255), notnull: false, unique: true}
+    password: {type: string(255) }
+    token_recuperar_password: {type: string(255), notnull: false}
+  relations:
+    TipoPersonaSistema: {local: tipo_persona_sistema_id, foreign: id, foreignAlias: PersonasSistema}
+
+Evaluacion:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    persona_sistema_id: {type: integer, notnull: true}
+    persona_concurso_id: {type: integer, notnull: true}
+    nota: {type: integer, notnull: true, default: 0}
+    estado: {type: integer, notnull: true, default: 1} #1: en evaluacion, 2: evaluación enviada por evaluador simple(perfil 2), 3: evaluación enviada por evaluador de recursos, 4: evaluación enviada por evaluador final (cerrada)
+    comentario: {type: string, notnull: false}
+    recomiendo_adjudicacion: {type: boolean, default: false, notnull: false}
+  relations:
+    PersonaSistema: {local: persona_sistema_id, foreign: id, foreignAlias: Evaluaciones}
+    PersonaConcurso: {local: persona_concurso_id, foreign: id, foreignAlias: Evaluaciones}
+
+NotaFormulacion:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    evaluacion_id: {type: integer, notnull: true}
+    porcentaje_evaluacion_id: {type: integer, notnull: true}
+    nota: {type: integer, notnull: true, default: 0}
+  relations:
+    Evaluacion: {local: evaluacion_id, foreign: id, foreignAlias: NotasFormulacion, onDelete: CASCADE}
+    PorcentajeEvaluacion: {local: porcentaje_evaluacion_id, foreign: id, foreignAlias: NotasFormulacion}
+    
+AjusteRecurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    evaluacion_id: {type: integer, notnull: true}
+    recurso_id: {type: integer, notnull: true}
+    monto_aprobado: {type: integer, notnull: true}
+    comentario: {type: string, notnull: false}
+  relations:
+    Evaluacion: {local: evaluacion_id, foreign: id, foreignAlias: AjustesRecurso, onDelete: CASCADE}
+    Recurso: {local: recurso_id, foreign: id, foreignAlias: AjustesRecurso}
+
+AjusteDetalleRecurso:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    ajuste_recurso_id: {type: integer, notnull: true}
+    detalle_recurso_id: {type: integer, notnull: true}
+    monto_aprobado: {type: integer, notnull: true}
+  relations:
+    AjusteRecurso: {local: ajuste_recurso_id, foreign: id, foreignAlias: AjustesDetalleRecurso, onDelete: CASCADE}
+    DetalleRecurso: {local: detalle_recurso_id, foreign: id, foreignAlias: AjustesDetalleRecurso}
+
+AjusteDetalleRecursoGastosOperacion:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    ajuste_detalle_recurso_id: {type: integer, notnull: true}
+    detalle_recurso_gastos_operacion_id: {type: integer, notnull: true}
+    monto_aprobado: {type: integer, notnull: true}
+  relations:
+    AjusteDetalleRecurso: {local: ajuste_detalle_recurso_id, foreign: id, foreignAlias: AjustesDetalleRecursoGastosOperacion, onDelete: CASCADE}
+    DetalleRecursoGastosOperacion: {local: detalle_recurso_gastos_operacion_id, foreign: id, foreignAlias: AjustesDetalleRecursoGastosOperacion}
+    
+NotaProductividad:
+  actAs: {Timestampable: ~}
+  columns:
+    id: {type: integer, primary: true, autoincrement: true}
+    evaluacion_id: {type: integer, notnull: false}
+    porcentaje_productividad_concurso_id: {type: integer, notnull: false}
+    nota: {type: integer, notnull: true, default: 0}
+  relations:
+    PorcentajeProductividadConcurso: {local: porcentaje_productividad_concurso_id, foreign: id, foreignAlias: NotasProductividad}
+    Evaluacion: {local: evaluacion_id, foreign: id, foreignAlias: NotasProductividad, onDelete: CASCADE}
+

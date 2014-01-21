@@ -1,0 +1,46 @@
+TipoArchivo:
+  resumen:
+    nombre_documento: Resumen
+    acronimo: resumen
+  problema_solucion:
+    nombre_documento: Definicion del Problema y Solucion
+    acronimo: definicion_problema_y_solucion
+  marco_teorico:
+    nombre_documento: Marco teorico
+    acronimo: marco_teorico
+  bibliografia:
+    nombre_documento: Bibliografia
+    acronimo: bibliografia
+  hipotesis:
+    nombre_documento: Hipotesis
+    acronimo: hipotesis
+  objetivos:
+    nombre_documento: Objetivos
+    acronimo: objetivos
+  metodologia:
+    nombre_documento: Metodologia
+    acronimo: metodologia
+  plan_de_trabajo:
+    nombre_documento: Plan de trabajo
+    acronimo: plan_de_trabajo
+  resultados:
+    nombre_documento: Resultados
+    acronimo: resultados
+  trabajo_adelantado:
+    nombre_documento: Trabajo adelantado
+    acronimo: trabajo_adelantado
+  carta_compromiso:
+    nombre_documento: Carta de compromiso
+    acronimo: carta_compromiso
+  carta_respaldo_ua:
+    nombre_documento: Carta de Respaldo de la Unidad Academica
+    acronimo: carta_respaldo_ua
+  evaluadores_sugeridos:
+    nombre_documento: Evaluadores sugeridos
+    acronimo: evaluadores_sugeridos
+  evaluadores_con_conflictos:
+    nombre_documento: Evaluadores con conflictos de intereses
+    acronimo: evaluadores_con_conflictos
+  certificado_titulo:
+    nombre_documento: Certificado de titulo de maximo grado Academico
+    acronimo: certificado_titulo

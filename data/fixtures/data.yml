@@ -1,0 +1,1992 @@
+ConcursoTipoArchivo:
+  ConcursoTipoArchivo_1:
+    Concurso: Concurso_7
+    TipoArchivo: TipoArchivo_1
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  ConcursoTipoArchivo_2:
+    Concurso: Concurso_7
+    TipoArchivo: TipoArchivo_3
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  ConcursoTipoArchivo_3:
+    Concurso: Concurso_7
+    TipoArchivo: TipoArchivo_6
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  ConcursoTipoArchivo_4:
+    Concurso: Concurso_7
+    TipoArchivo: TipoArchivo_8
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  ConcursoTipoArchivo_5:
+    Concurso: Concurso_7
+    TipoArchivo: TipoArchivo_9
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  ConcursoTipoArchivo_6:
+    Concurso: Concurso_7
+    TipoArchivo: TipoArchivo_10
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  ConcursoTipoArchivo_7:
+    Concurso: Concurso_7
+    TipoArchivo: TipoArchivo_16
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  ConcursoTipoArchivo_8:
+    Concurso: Concurso_7
+    TipoArchivo: TipoArchivo_17
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  ConcursoTipoArchivo_9:
+    Concurso: Concurso_7
+    TipoArchivo: TipoArchivo_13
+    created_at: '2012-12-19 11:23:32'
+    updated_at: '2012-12-19 11:23:32'
+  ConcursoTipoArchivo_10:
+    Concurso: Concurso_7
+    TipoArchivo: TipoArchivo_14
+    created_at: '2012-12-19 11:23:32'
+    updated_at: '2012-12-19 11:23:32'
+  ConcursoTipoArchivo_11:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_1
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_12:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_2
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_13:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_3
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_14:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_4
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_15:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_5
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_16:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_6
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_17:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_7
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_18:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_8
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_19:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_9
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_20:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_10
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_21:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_13
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_22:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_14
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_23:
+    Concurso: Concurso_8
+    TipoArchivo: TipoArchivo_15
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ConcursoTipoArchivo_24:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_1
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_25:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_2
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_26:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_3
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_27:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_4
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_28:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_5
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_29:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_6
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_30:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_7
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_31:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_8
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_32:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_9
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_33:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_10
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_34:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_13
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_35:
+    Concurso: Concurso_9
+    TipoArchivo: TipoArchivo_14
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ConcursoTipoArchivo_36:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_1
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_37:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_2
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_38:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_3
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_39:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_4
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_40:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_5
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_41:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_6
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_42:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_7
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_43:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_8
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_44:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_9
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_45:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_10
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_46:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_13
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_47:
+    Concurso: Concurso_10
+    TipoArchivo: TipoArchivo_14
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ConcursoTipoArchivo_48:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_1
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_49:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_2
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_50:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_3
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_51:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_4
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_52:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_5
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_53:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_6
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_54:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_7
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_55:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_8
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_56:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_9
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_57:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_10
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_58:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_13
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ConcursoTipoArchivo_59:
+    Concurso: Concurso_11
+    TipoArchivo: TipoArchivo_14
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+RestriccionConcurso:
+  RestriccionConcurso_1:
+    TipoProfesor: TipoProfesor_1
+    Concurso: Concurso_7
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  RestriccionConcurso_2:
+    TipoProfesor: TipoProfesor_2
+    Concurso: Concurso_7
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  RestriccionConcurso_3:
+    TipoProfesor: TipoProfesor_3
+    Concurso: Concurso_7
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  RestriccionConcurso_4:
+    TipoProfesor: TipoProfesor_4
+    Concurso: Concurso_7
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  RestriccionConcurso_5:
+    TipoProfesor: TipoProfesor_1
+    Concurso: Concurso_8
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  RestriccionConcurso_6:
+    TipoProfesor: TipoProfesor_2
+    Concurso: Concurso_8
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  RestriccionConcurso_7:
+    TipoProfesor: TipoProfesor_3
+    Concurso: Concurso_8
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  RestriccionConcurso_8:
+    TipoProfesor: TipoProfesor_1
+    Concurso: Concurso_9
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  RestriccionConcurso_9:
+    TipoProfesor: TipoProfesor_2
+    Concurso: Concurso_9
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  RestriccionConcurso_10:
+    TipoProfesor: TipoProfesor_3
+    Concurso: Concurso_9
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  RestriccionConcurso_11:
+    TipoProfesor: TipoProfesor_4
+    Concurso: Concurso_9
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  RestriccionConcurso_12:
+    TipoProfesor: TipoProfesor_1
+    Concurso: Concurso_10
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  RestriccionConcurso_13:
+    TipoProfesor: TipoProfesor_2
+    Concurso: Concurso_10
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+Item:
+  Item_1:
+    nombre_item: 'Gastos de Operación'
+    acronimo: gastos_operacion
+    tiene_subitem: false
+    created_at: '2012-12-19 09:57:00'
+    updated_at: '2012-12-19 09:57:00'
+  Item_2:
+    nombre_item: 'Alumno Ayudante'
+    acronimo: alumno_ayudante
+    tiene_subitem: false
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Item_3:
+    nombre_item: 'Personal tecnico y/o apoyo'
+    acronimo: personal_tecnico_y_apoyo
+    tiene_subitem: true
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Item_4:
+    nombre_item: 'Viajes Nacionales e Internacionales'
+    acronimo: viajes_y_viaticos
+    tiene_subitem: false
+    created_at: '2012-12-19 09:57:00'
+    updated_at: '2012-12-19 09:57:00'
+  Item_5:
+    nombre_item: 'Inscripciones a congresos'
+    acronimo: inscripciones_a_congresos
+    tiene_subitem: false
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Item_6:
+    nombre_item: 'Inscripciones a enventos de difusion de resultados'
+    acronimo: inscripciones_a_eventos_de_difusion
+    tiene_subitem: false
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Item_7:
+    nombre_item: 'Incripciones a congresos u otros eventos de difusion'
+    acronimo: inscripciones_a_congresos_u_otros_eventos_de_difusion
+    tiene_subitem: false
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+PorcentajeEvaluacion:
+  PorcentajeEvaluacion_1:
+    ConcursoTipoArchivo: ConcursoTipoArchivo_49
+    numero: '1'
+    porcentaje_evaluacion: '10'
+    created_at: '2013-01-21 19:28:21'
+    updated_at: '2013-01-21 19:28:21'
+  PorcentajeEvaluacion_2:
+    ConcursoTipoArchivo: ConcursoTipoArchivo_49
+    numero: '2'
+    porcentaje_evaluacion: '20'
+    created_at: '2013-01-21 19:28:30'
+    updated_at: '2013-01-21 19:28:30'
+  PorcentajeEvaluacion_3:
+    ConcursoTipoArchivo: ConcursoTipoArchivo_52
+    numero: '1'
+    porcentaje_evaluacion: '20'
+    created_at: '2013-01-21 19:28:43'
+    updated_at: '2013-01-21 19:28:43'
+  PorcentajeEvaluacion_4:
+    ConcursoTipoArchivo: ConcursoTipoArchivo_53
+    numero: '1'
+    porcentaje_evaluacion: '15'
+    created_at: '2013-01-21 19:28:50'
+    updated_at: '2013-01-21 19:28:50'
+  PorcentajeEvaluacion_5:
+    ConcursoTipoArchivo: ConcursoTipoArchivo_50
+    numero: '1'
+    porcentaje_evaluacion: '15'
+    created_at: '2013-01-21 19:29:04'
+    updated_at: '2013-01-21 19:29:04'
+  PorcentajeEvaluacion_6:
+    ConcursoTipoArchivo: ConcursoTipoArchivo_56
+    numero: '1'
+    porcentaje_evaluacion: '10'
+    created_at: '2013-01-21 19:29:14'
+    updated_at: '2013-01-21 19:29:14'
+  PorcentajeEvaluacion_7:
+    ConcursoTipoArchivo: ConcursoTipoArchivo_54
+    numero: '1'
+    porcentaje_evaluacion: '10'
+    created_at: '2013-01-21 19:29:20'
+    updated_at: '2013-01-21 19:29:20'
+PersonaExterna:
+  PersonaExterna_1:
+    rut: '16758207'
+    dv: '9'
+    nombre: Carla
+    apellido1: Godoy
+    apellido2: Diaz
+    nombre_universidad: 'Universidad de Valparaíso'
+    telefono: '95999036'
+    email: miguel.alcaino@ogb.cl
+    jerarquia: ''
+    compromiso_contractual_con_la_universidad: ''
+    created_at: '2012-12-26 16:50:33'
+    updated_at: '2012-12-26 16:50:33'
+  PersonaExterna_2:
+    rut: '111111'
+    dv: '1'
+    nombre: ewerwq
+    apellido1: eqwewqewq
+    apellido2: ewqewqewq
+    nombre_universidad: eqwewqeqw
+    telefono: '32131'
+    email: 321321@ucv.cl
+    jerarquia: ''
+    compromiso_contractual_con_la_universidad: ''
+    created_at: '2012-12-26 17:25:28'
+    updated_at: '2012-12-26 17:25:28'
+Subitem:
+  Subitem_1:
+    Item: Item_3
+    nombre_subitem: Tesistas
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  Subitem_2:
+    Item: Item_3
+    nombre_subitem: 'Personal de Apoyo'
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+PorcentajeProductividadConcurso:
+  PorcentajeProductividadConcurso_1:
+    Concurso: Concurso_11
+    tipo_productividad: proyectos_externos
+    porcentaje: '25'
+    created_at: '2013-01-21 19:53:14'
+    updated_at: '2013-01-22 09:25:26'
+  PorcentajeProductividadConcurso_2:
+    Concurso: Concurso_11
+    tipo_productividad: proyectos_internos
+    porcentaje: '15'
+    created_at: '2013-01-21 19:53:23'
+    updated_at: '2013-01-22 09:25:39'
+  PorcentajeProductividadConcurso_3:
+    Concurso: Concurso_11
+    tipo_productividad: publicaciones_isi
+    porcentaje: '25'
+    created_at: '2013-01-21 19:53:33'
+    updated_at: '2013-01-22 09:25:47'
+  PorcentajeProductividadConcurso_4:
+    Concurso: Concurso_11
+    tipo_productividad: publicaciones_sciELO
+    porcentaje: '15'
+    created_at: '2013-01-21 19:53:44'
+    updated_at: '2013-01-22 09:25:52'
+  PorcentajeProductividadConcurso_5:
+    Concurso: Concurso_11
+    tipo_productividad: publicaciones_no_ISI_ni_SciELO
+    porcentaje: '10'
+    created_at: '2013-01-21 19:53:53'
+    updated_at: '2013-01-22 09:26:04'
+  PorcentajeProductividadConcurso_6:
+    Concurso: Concurso_11
+    tipo_productividad: divulgacion
+    porcentaje: '10'
+    created_at: '2013-01-21 20:00:31'
+    updated_at: '2013-01-22 09:26:17'
+TipoProfesor:
+  TipoProfesor_1:
+    tipo: Asociado
+    numero_tipo: '1'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoProfesor_2:
+    tipo: Jerarquizado
+    numero_tipo: '2'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoProfesor_3:
+    tipo: Adscrito
+    numero_tipo: '3'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoProfesor_4:
+    tipo: 'No Jerarquizado'
+    numero_tipo: '4'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+UnidadAcademica:
+  UnidadAcademica_1:
+    nombre: 'Carrera de Ingenieria Civil'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_2:
+    nombre: 'Escuela de Agronomia'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_3:
+    nombre: 'Escuela de Arquitectura y Diseno'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_4:
+    nombre: 'Escuela de Ciencias del Mar'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_5:
+    nombre: 'Escuela de Comercio'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_6:
+    nombre: 'Escuela de Derecho'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_7:
+    nombre: 'Escuela de Eduacion Fisica'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_8:
+    nombre: 'Escuela de Ingenieria Comercial'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_9:
+    nombre: 'Escuela de Ingenieria Bioquimica'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_10:
+    nombre: 'Escuela de Ingenieria de Alimentos'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_11:
+    nombre: 'Escuela de Ingenieria Electrica'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_12:
+    nombre: 'Escuela de Ingenieria en Construccion'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_13:
+    nombre: 'Escuela de Ingenieria Industrial'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_14:
+    nombre: 'Escuela de Ingenieria Informatica'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_15:
+    nombre: 'Escuela de Ingenieria Mecanica'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_16:
+    nombre: 'Escuela de Ingenieria Quimica'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_17:
+    nombre: 'Escuela de Ingenieria de Transporte'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_18:
+    nombre: 'Escuela de Kinesiologia'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_19:
+    nombre: 'Escuela de Pedagogia'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_20:
+    nombre: 'Escuela de Periodismo'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_21:
+    nombre: 'Escuela de Psicologia'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_22:
+    nombre: 'Escuela de Trabajo Social'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_23:
+    nombre: 'Instituto de Arte'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_24:
+    nombre: 'Instituto de Biologia'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_25:
+    nombre: 'Instituto de Ciencias Religiosas'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_26:
+    nombre: 'Instituto de Estadistica'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_27:
+    nombre: 'Instituto de Filosofia'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_28:
+    nombre: 'Instituto de Fisica'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_29:
+    nombre: 'Instituto de Geografia'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_30:
+    nombre: 'Instituto de Historia'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_31:
+    nombre: 'Instituto de Literatura y Ciencias del Lenguaje'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_32:
+    nombre: 'Instituto de Matematicas'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_33:
+    nombre: 'Instituto de Musica'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_34:
+    nombre: 'Instituto de Quimica'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  UnidadAcademica_35:
+    nombre: Oceanografia
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+ArchivoPostulacion:
+  ArchivoPostulacion_1:
+    TipoArchivo: TipoArchivo_1
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoPostulacion_2:
+    TipoArchivo: TipoArchivo_2
+    PersonaConcurso: PersonaConcurso_1
+    ruta: '112Sin título 1.pdf'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:49'
+  ArchivoPostulacion_3:
+    TipoArchivo: TipoArchivo_3
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoPostulacion_4:
+    TipoArchivo: TipoArchivo_4
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoPostulacion_5:
+    TipoArchivo: TipoArchivo_5
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoPostulacion_6:
+    TipoArchivo: TipoArchivo_6
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoPostulacion_7:
+    TipoArchivo: TipoArchivo_7
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoPostulacion_8:
+    TipoArchivo: TipoArchivo_8
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoPostulacion_9:
+    TipoArchivo: TipoArchivo_9
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoPostulacion_10:
+    TipoArchivo: TipoArchivo_10
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoPostulacion_11:
+    TipoArchivo: TipoArchivo_13
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoPostulacion_12:
+    TipoArchivo: TipoArchivo_14
+    PersonaConcurso: PersonaConcurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+PersonaConcurso:
+  PersonaConcurso_1:
+    Concurso: Concurso_11
+    fecha_envio: null
+    estado: '1'
+    titulo: null
+    categoria_arte: null
+    categoria_arte_otra: null
+    ruta_pdf_postulacion: null
+    estado_evaluacion: '0'
+    esta_aprobado: false
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+ArchivoRecurso:
+  ArchivoRecurso_1:
+    Recurso: Recurso_1
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoRecurso_2:
+    Recurso: Recurso_2
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoRecurso_3:
+    Recurso: Recurso_3
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoRecurso_4:
+    Recurso: Recurso_4
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  ArchivoRecurso_5:
+    Recurso: Recurso_5
+    ruta: null
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+PersonaSistema:
+  PersonaSistema_1:
+    perfil: '1'
+    rut: '16759248'
+    dv: '1'
+    nombre: Miguel
+    apellido1: Alcaíno
+    apellido2: Avila
+    telefono: '78939789'
+    email: miguel.alcaino@ogb.cl
+    password: cacuca
+    token_recuperar_password: null
+    created_at: '2013-01-18 20:00:53'
+    updated_at: '2013-01-18 20:00:53'
+Evaluacion:
+  Evaluacion_1:
+    PersonaSistema: PersonaSistema_1
+    PersonaConcurso: PersonaConcurso_1
+    nota: '0'
+    estado: '1'
+    comentario: ''
+    created_at: '2013-01-22 11:57:34'
+    updated_at: '2013-01-22 11:57:34'
+  Evaluacion_2:
+    PersonaSistema: PersonaSistema_1
+    PersonaConcurso: PersonaConcurso_1
+    nota: '0'
+    estado: '1'
+    comentario: ''
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+TipoArchivo:
+  TipoArchivo_1:
+    nombre_documento: Resumen
+    acronimo: resumen
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_2:
+    nombre_documento: 'Definicion del Problema y Solucion'
+    acronimo: definicion_problema_y_solucion
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_3:
+    nombre_documento: 'Marco teorico'
+    acronimo: marco_teorico
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_4:
+    nombre_documento: Bibliografia
+    acronimo: bibliografia
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_5:
+    nombre_documento: Hipotesis
+    acronimo: hipotesis
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_6:
+    nombre_documento: Objetivos
+    acronimo: objetivos
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_7:
+    nombre_documento: Metodologia
+    acronimo: metodologia
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_8:
+    nombre_documento: 'Plan de trabajo'
+    acronimo: plan_de_trabajo
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_9:
+    nombre_documento: Resultados
+    acronimo: resultados
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_10:
+    nombre_documento: 'Trabajo adelantado'
+    acronimo: trabajo_adelantado
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_11:
+    nombre_documento: 'Carta de compromiso'
+    acronimo: carta_compromiso
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_12:
+    nombre_documento: 'Carta de Respaldo de la Unidad Academica'
+    acronimo: carta_respaldo_ua
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_13:
+    nombre_documento: 'Evaluadores sugeridos'
+    acronimo: evaluadores_sugeridos
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_14:
+    nombre_documento: 'Evaluadores con conflictos de intereses'
+    acronimo: evaluadores_con_conflictos
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_15:
+    nombre_documento: 'Certificado de titulo de maximo grado Academico'
+    acronimo: certificado_titulo
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_16:
+    nombre_documento: Impacto
+    acronimo: impacto
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  TipoArchivo_17:
+    nombre_documento: 'Definicion del publico objetivo'
+    acronimo: definicion_publico_objetivo
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+AjusteRecurso:
+  AjusteRecurso_1:
+    Evaluacion: Evaluacion_1
+    Recurso: Recurso_1
+    monto_aprobado: '31'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  AjusteRecurso_2:
+    Evaluacion: Evaluacion_1
+    Recurso: Recurso_2
+    monto_aprobado: '0'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  AjusteRecurso_3:
+    Evaluacion: Evaluacion_1
+    Recurso: Recurso_3
+    monto_aprobado: '0'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  AjusteRecurso_4:
+    Evaluacion: Evaluacion_1
+    Recurso: Recurso_4
+    monto_aprobado: '0'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  AjusteRecurso_5:
+    Evaluacion: Evaluacion_1
+    Recurso: Recurso_5
+    monto_aprobado: '0'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  AjusteRecurso_6:
+    Evaluacion: Evaluacion_2
+    Recurso: Recurso_1
+    monto_aprobado: '30'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  AjusteRecurso_7:
+    Evaluacion: Evaluacion_2
+    Recurso: Recurso_2
+    monto_aprobado: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  AjusteRecurso_8:
+    Evaluacion: Evaluacion_2
+    Recurso: Recurso_3
+    monto_aprobado: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  AjusteRecurso_9:
+    Evaluacion: Evaluacion_2
+    Recurso: Recurso_4
+    monto_aprobado: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  AjusteRecurso_10:
+    Evaluacion: Evaluacion_2
+    Recurso: Recurso_5
+    monto_aprobado: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+Persona:
+  Persona_1:
+    TipoProfesor: TipoProfesor_1
+    UnidadAcademica: UnidadAcademica_14
+    rut: '16759248'
+    dv: '1'
+    nombre: 'Miguel Andres'
+    apellido1: Alcaino
+    apellido2: Avila
+    telefono: ''
+    email: miguel.alcaino@ogb.cl
+    password: cacuca
+    token_recuperar_password: null
+    estado_login: '1'
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-26 18:35:06'
+  Persona_2:
+    TipoProfesor: TipoProfesor_1
+    UnidadAcademica: UnidadAcademica_14
+    rut: '16364084'
+    dv: '8'
+    nombre: 'Luis Bernardo'
+    apellido1: Casanova
+    apellido2: Uribe
+    telefono: '123456'
+    email: hola@ead.cl
+    password: c2a4ba779407b585de8c8d6c79dcc80a
+    token_recuperar_password: null
+    estado_login: '1'
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-27 10:50:16'
+  Persona_3:
+    TipoProfesor: TipoProfesor_2
+    UnidadAcademica: UnidadAcademica_14
+    rut: '6948517'
+    dv: '0'
+    nombre: 'Carlos Hector'
+    apellido1: Osorio
+    apellido2: Matzke
+    telefono: '666666666'
+    email: dii.soporte@ucv.cl
+    password: null
+    token_recuperar_password: null
+    estado_login: '0'
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  Persona_4:
+    TipoProfesor: TipoProfesor_2
+    UnidadAcademica: UnidadAcademica_14
+    rut: '13543764'
+    dv: '6'
+    nombre: Francisco
+    apellido1: Rocha
+    apellido2: Solis
+    telefono: '7777777'
+    email: dii.proyectos4@ucv.cl
+    password: null
+    token_recuperar_password: null
+    estado_login: '0'
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  Persona_5:
+    TipoProfesor: TipoProfesor_1
+    UnidadAcademica: UnidadAcademica_14
+    rut: '15720315'
+    dv: '0'
+    nombre: 'Maria Jose'
+    apellido1: Iriarte
+    apellido2: Ahumada
+    telefono: '88888888'
+    email: dii.proyectos2@ucv.cl
+    password: null
+    token_recuperar_password: null
+    estado_login: '0'
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+NotaFormulacion:
+  NotaFormulacion_1:
+    Evaluacion: Evaluacion_1
+    PorcentajeEvaluacion: PorcentajeEvaluacion_1
+    nota: '0'
+    created_at: '2013-01-22 11:57:34'
+    updated_at: '2013-01-22 11:57:34'
+  NotaFormulacion_2:
+    Evaluacion: Evaluacion_1
+    PorcentajeEvaluacion: PorcentajeEvaluacion_2
+    nota: '0'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  NotaFormulacion_3:
+    Evaluacion: Evaluacion_1
+    PorcentajeEvaluacion: PorcentajeEvaluacion_5
+    nota: '0'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  NotaFormulacion_4:
+    Evaluacion: Evaluacion_1
+    PorcentajeEvaluacion: PorcentajeEvaluacion_3
+    nota: '0'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  NotaFormulacion_5:
+    Evaluacion: Evaluacion_1
+    PorcentajeEvaluacion: PorcentajeEvaluacion_4
+    nota: '0'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  NotaFormulacion_6:
+    Evaluacion: Evaluacion_1
+    PorcentajeEvaluacion: PorcentajeEvaluacion_7
+    nota: '0'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  NotaFormulacion_7:
+    Evaluacion: Evaluacion_1
+    PorcentajeEvaluacion: PorcentajeEvaluacion_6
+    nota: '0'
+    created_at: '2013-01-22 11:57:35'
+    updated_at: '2013-01-22 11:57:35'
+  NotaFormulacion_8:
+    Evaluacion: Evaluacion_2
+    PorcentajeEvaluacion: PorcentajeEvaluacion_1
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaFormulacion_9:
+    Evaluacion: Evaluacion_2
+    PorcentajeEvaluacion: PorcentajeEvaluacion_2
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaFormulacion_10:
+    Evaluacion: Evaluacion_2
+    PorcentajeEvaluacion: PorcentajeEvaluacion_5
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaFormulacion_11:
+    Evaluacion: Evaluacion_2
+    PorcentajeEvaluacion: PorcentajeEvaluacion_3
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaFormulacion_12:
+    Evaluacion: Evaluacion_2
+    PorcentajeEvaluacion: PorcentajeEvaluacion_4
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaFormulacion_13:
+    Evaluacion: Evaluacion_2
+    PorcentajeEvaluacion: PorcentajeEvaluacion_7
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaFormulacion_14:
+    Evaluacion: Evaluacion_2
+    PorcentajeEvaluacion: PorcentajeEvaluacion_6
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+Concurso:
+  Concurso_1:
+    nombre_concurso: 'DI Regular'
+    acronimo: di_regular
+    monto_maximo: '2500000'
+    inicio_postulacion: '2012-01-15 00:00:00'
+    termino_postulacion: '2012-03-06 23:59:59'
+    duracion: '9'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Concurso_2:
+    nombre_concurso: 'DI Creacion Artistica'
+    acronimo: di_artes
+    monto_maximo: '2000000'
+    inicio_postulacion: '2012-01-15 00:00:00'
+    termino_postulacion: '2012-03-06 23:59:59'
+    duracion: '9'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Concurso_3:
+    nombre_concurso: 'DI Iniciacion'
+    acronimo: di_iniciacion
+    monto_maximo: '2000000'
+    inicio_postulacion: '2012-01-15 00:00:00'
+    termino_postulacion: '2012-03-06 23:59:59'
+    duracion: '9'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Concurso_4:
+    nombre_concurso: 'DI Sello Valorico'
+    acronimo: di_sello_valorico
+    monto_maximo: '2000000'
+    inicio_postulacion: '2012-01-15 00:00:00'
+    termino_postulacion: '2012-03-06 23:59:59'
+    duracion: '9'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Concurso_5:
+    nombre_concurso: 'DI Investigacion Asociativa'
+    acronimo: di_pia
+    monto_maximo: '5000000'
+    inicio_postulacion: '2012-01-15 00:00:00'
+    termino_postulacion: '2012-03-06 23:59:59'
+    duracion: '9'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Concurso_6:
+    nombre_concurso: 'DI Apoyo Tesis Doctoral'
+    acronimo: di_apoyo_tesis_doctoral
+    monto_maximo: '750000'
+    inicio_postulacion: '2012-01-15 00:00:00'
+    termino_postulacion: '2012-03-06 23:59:59'
+    duracion: '9'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Concurso_7:
+    Convocatoria: Convocatoria_2
+    nombre_concurso: 'DI Creación Artística 2013'
+    acronimo: di_artes
+    monto_maximo: '2000000'
+    inicio_postulacion: '2012-12-01 00:00:00'
+    termino_postulacion: '2013-12-31 23:59:00'
+    duracion: '9'
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  Concurso_8:
+    Convocatoria: Convocatoria_2
+    nombre_concurso: 'DI Apoyo Tesis Doctoral 2013'
+    acronimo: di_apoyo_tesis_doctoral
+    monto_maximo: '750000'
+    inicio_postulacion: '2012-12-01 00:00:00'
+    termino_postulacion: '2013-12-31 23:59:00'
+    duracion: '9'
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  Concurso_9:
+    Convocatoria: Convocatoria_2
+    nombre_concurso: 'DI Sello Valórico 2013'
+    acronimo: di_sello_valorico
+    monto_maximo: '2000000'
+    inicio_postulacion: '2012-12-01 00:00:00'
+    termino_postulacion: '2013-12-31 23:59:00'
+    duracion: '9'
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  Concurso_10:
+    Convocatoria: Convocatoria_2
+    nombre_concurso: 'DI Investigación Asociativa 2013'
+    acronimo: di_pia
+    monto_maximo: '5000000'
+    inicio_postulacion: '2012-12-01 00:00:00'
+    termino_postulacion: '2013-12-31 23:59:00'
+    duracion: '9'
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  Concurso_11:
+    Convocatoria: Convocatoria_2
+    nombre_concurso: 'DI Iniciación 2013'
+    acronimo: di_iniciacion
+    monto_maximo: '2000000'
+    inicio_postulacion: '2012-12-01 00:00:00'
+    termino_postulacion: '2013-12-31 23:59:00'
+    duracion: '9'
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+ItemConcurso:
+  ItemConcurso_1:
+    Concurso: Concurso_3
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: gastos_operacion
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_2:
+    Concurso: Concurso_3
+    Item: Item_2
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: alumno_ayudante
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_3:
+    Concurso: Concurso_3
+    Item: Item_3
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: personal_tecnico_y_apoyo
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_4:
+    Concurso: Concurso_3
+    Item: Item_4
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: viajes_y_viaticos
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_5:
+    Concurso: Concurso_3
+    Item: Item_5
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: inscripciones_a_congresos
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_6:
+    Concurso: Concurso_1
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: gastos_operacion
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_7:
+    Concurso: Concurso_1
+    Item: Item_2
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: alumno_ayudante
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_8:
+    Concurso: Concurso_1
+    Item: Item_3
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: personal_tecnico_y_apoyo
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_9:
+    Concurso: Concurso_1
+    Item: Item_4
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: viajes_y_viaticos
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_10:
+    Concurso: Concurso_1
+    Item: Item_5
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: inscripciones_a_congresos
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_11:
+    Concurso: Concurso_2
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: gastos_operacion
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_12:
+    Concurso: Concurso_2
+    Item: Item_2
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: alumno_ayudante
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_13:
+    Concurso: Concurso_2
+    Item: Item_3
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: personal_tecnico_y_apoyo
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_14:
+    Concurso: Concurso_2
+    Item: Item_4
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: viajes_y_viaticos
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_15:
+    Concurso: Concurso_2
+    Item: Item_6
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: inscripciones_a_eventos_de_difusion
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_16:
+    Concurso: Concurso_4
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: gastos_operacion
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_17:
+    Concurso: Concurso_4
+    Item: Item_2
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: alumno_ayudante
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_18:
+    Concurso: Concurso_4
+    Item: Item_3
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: personal_tecnico_y_apoyo
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_19:
+    Concurso: Concurso_4
+    Item: Item_4
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: viajes_y_viaticos
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_20:
+    Concurso: Concurso_4
+    Item: Item_7
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: inscripciones_a_congresos_u_otros_eventos_de_difusion
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_21:
+    Concurso: Concurso_5
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: gastos_operacion
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_22:
+    Concurso: Concurso_5
+    Item: Item_2
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: alumno_ayudante
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  ItemConcurso_23:
+    Concurso: Concurso_5
+    Item: Item_3
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: personal_tecnico_y_apoyo
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  ItemConcurso_24:
+    Concurso: Concurso_5
+    Item: Item_4
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: viajes_y_viaticos
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  ItemConcurso_25:
+    Concurso: Concurso_5
+    Item: Item_5
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: inscripciones_a_congresos
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  ItemConcurso_26:
+    Concurso: Concurso_6
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: gastos_operacion
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  ItemConcurso_27:
+    Concurso: Concurso_6
+    Item: Item_4
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: viajes_y_viaticos
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  ItemConcurso_28:
+    Concurso: Concurso_6
+    Item: Item_5
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: inscripciones_a_congresos
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  ItemConcurso_29:
+    Concurso: Concurso_7
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-19 10:12:17'
+  ItemConcurso_30:
+    Concurso: Concurso_7
+    Item: Item_2
+    monto_maximo: '400000'
+    porcentaje_maximo: '20'
+    acronimo_recurso: ''
+    created_at: '2012-12-19 10:12:00'
+    updated_at: '2012-12-20 16:57:39'
+  ItemConcurso_31:
+    Concurso: Concurso_7
+    Item: Item_3
+    monto_maximo: '300000'
+    porcentaje_maximo: '15'
+    acronimo_recurso: ''
+    created_at: '2012-12-19 10:12:00'
+    updated_at: '2012-12-19 10:12:00'
+  ItemConcurso_32:
+    Concurso: Concurso_7
+    Item: Item_4
+    monto_maximo: '800000'
+    porcentaje_maximo: '40'
+    acronimo_recurso: ''
+    created_at: '2012-12-19 10:12:00'
+    updated_at: '2012-12-20 16:56:17'
+  ItemConcurso_33:
+    Concurso: Concurso_7
+    Item: Item_6
+    monto_maximo: '200000'
+    porcentaje_maximo: '10'
+    acronimo_recurso: ''
+    created_at: '2012-12-19 10:12:17'
+    updated_at: '2012-12-20 16:57:59'
+  ItemConcurso_34:
+    Concurso: Concurso_8
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ItemConcurso_35:
+    Concurso: Concurso_8
+    Item: Item_4
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ItemConcurso_36:
+    Concurso: Concurso_8
+    Item: Item_5
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-19 11:27:03'
+    updated_at: '2012-12-19 11:27:03'
+  ItemConcurso_37:
+    Concurso: Concurso_9
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ItemConcurso_38:
+    Concurso: Concurso_9
+    Item: Item_2
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ItemConcurso_39:
+    Concurso: Concurso_9
+    Item: Item_3
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ItemConcurso_40:
+    Concurso: Concurso_9
+    Item: Item_4
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ItemConcurso_41:
+    Concurso: Concurso_9
+    Item: Item_7
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-26 16:24:31'
+    updated_at: '2012-12-26 16:24:31'
+  ItemConcurso_42:
+    Concurso: Concurso_10
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ItemConcurso_43:
+    Concurso: Concurso_10
+    Item: Item_2
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ItemConcurso_44:
+    Concurso: Concurso_10
+    Item: Item_3
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ItemConcurso_45:
+    Concurso: Concurso_10
+    Item: Item_4
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ItemConcurso_46:
+    Concurso: Concurso_10
+    Item: Item_5
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-26 16:48:49'
+    updated_at: '2012-12-26 16:48:49'
+  ItemConcurso_47:
+    Concurso: Concurso_11
+    Item: Item_1
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ItemConcurso_48:
+    Concurso: Concurso_11
+    Item: Item_2
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ItemConcurso_49:
+    Concurso: Concurso_11
+    Item: Item_3
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ItemConcurso_50:
+    Concurso: Concurso_11
+    Item: Item_4
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+  ItemConcurso_51:
+    Concurso: Concurso_11
+    Item: Item_5
+    monto_maximo: null
+    porcentaje_maximo: null
+    acronimo_recurso: null
+    created_at: '2012-12-27 11:21:56'
+    updated_at: '2012-12-27 11:21:56'
+Pregunta:
+  Pregunta_1:
+    Encuesta: Encuesta_1
+    texto_pregunta: '¿Cree usted que este formulario es hermoso?'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Pregunta_2:
+    Encuesta: Encuesta_1
+    texto_pregunta: '¿Esta usted contento con su trabajo?'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Pregunta_3:
+    Encuesta: Encuesta_1
+    texto_pregunta: '¿Cree que le vida le dara buenos momentos?'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Pregunta_4:
+    Encuesta: Encuesta_1
+    texto_pregunta: '¿Cree que el mundo se acabara el 21 de diciembre del 2012?'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+DetalleRecurso:
+  DetalleRecurso_1:
+    Recurso: Recurso_1
+    periodo: '1'
+    monto: '10'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:39:01'
+  DetalleRecurso_2:
+    Recurso: Recurso_1
+    periodo: '2'
+    monto: '20'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:39:01'
+  DetalleRecurso_3:
+    Recurso: Recurso_2
+    periodo: '1'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecurso_4:
+    Recurso: Recurso_2
+    periodo: '2'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecurso_5:
+    Recurso: Recurso_3
+    periodo: '1'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecurso_6:
+    Recurso: Recurso_3
+    periodo: '2'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecurso_7:
+    Recurso: Recurso_4
+    periodo: '1'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecurso_8:
+    Recurso: Recurso_4
+    periodo: '2'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecurso_9:
+    Recurso: Recurso_5
+    periodo: '1'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecurso_10:
+    Recurso: Recurso_5
+    periodo: '2'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+Encuesta:
+  Encuesta_1:
+    nombre: 'Encuesta 1'
+    fecha_inicio: '0000-00-00 00:00:00'
+    fecha_termino: '0000-00-00 00:00:00'
+    esta_publicada: false
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+Alternativa:
+  Alternativa_1:
+    Pregunta: Pregunta_1
+    texto_alternativa: 'alternativa 111'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Alternativa_2:
+    Pregunta: Pregunta_1
+    texto_alternativa: 'alternativa 112'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Alternativa_3:
+    Pregunta: Pregunta_2
+    texto_alternativa: 'alternativa 121'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Alternativa_4:
+    Pregunta: Pregunta_2
+    texto_alternativa: 'alternativa 122'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Alternativa_5:
+    Pregunta: Pregunta_3
+    texto_alternativa: 'alternativa 131'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Alternativa_6:
+    Pregunta: Pregunta_3
+    texto_alternativa: 'alternativa 132'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Alternativa_7:
+    Pregunta: Pregunta_4
+    texto_alternativa: 'alternativa 141'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Alternativa_8:
+    Pregunta: Pregunta_4
+    texto_alternativa: 'alternativa 142'
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+Recurso:
+  Recurso_1:
+    PersonaConcurso: PersonaConcurso_1
+    ItemConcurso: ItemConcurso_47
+    total: '30'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:39:01'
+  Recurso_2:
+    PersonaConcurso: PersonaConcurso_1
+    ItemConcurso: ItemConcurso_48
+    total: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  Recurso_3:
+    PersonaConcurso: PersonaConcurso_1
+    ItemConcurso: ItemConcurso_49
+    total: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  Recurso_4:
+    PersonaConcurso: PersonaConcurso_1
+    ItemConcurso: ItemConcurso_50
+    total: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  Recurso_5:
+    PersonaConcurso: PersonaConcurso_1
+    ItemConcurso: ItemConcurso_51
+    total: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+ParticipantePostulacion:
+  ParticipantePostulacion_1:
+    Persona: Persona_1
+    PersonaConcurso: PersonaConcurso_1
+    email: null
+    tipo_participante: '1'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+Convocatoria:
+  Convocatoria_1:
+    anio: '2012'
+    nombre: 'Convocatoria 2012'
+    esta_vigente: false
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+  Convocatoria_2:
+    anio: '2013'
+    nombre: 'Convocatoria 2013'
+    esta_vigente: false
+    created_at: '2012-12-19 09:57:41'
+    updated_at: '2012-12-19 09:57:41'
+DoctoradoAcreditado:
+  DoctoradoAcreditado_1:
+    nombre: Acuicultura
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  DoctoradoAcreditado_2:
+    nombre: Biotecnologia
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  DoctoradoAcreditado_3:
+    nombre: 'Ciencias con mencion en Quimica'
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  DoctoradoAcreditado_4:
+    nombre: 'Ciencias de la Ingenieria con mencion en Ingenieria Bioquimica'
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  DoctoradoAcreditado_5:
+    nombre: 'Ciencias Fisicas'
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  DoctoradoAcreditado_6:
+    nombre: Derecho
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  DoctoradoAcreditado_7:
+    nombre: Filosofia
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  DoctoradoAcreditado_8:
+    nombre: Linguistica
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+  DoctoradoAcreditado_9:
+    nombre: Literatura
+    created_at: '2012-12-19 09:57:42'
+    updated_at: '2012-12-19 09:57:42'
+DetalleRecursoGastosOperacion:
+  DetalleRecursoGastosOperacion_1:
+    DetalleRecurso: DetalleRecurso_1
+    tipo_de_gasto: '1'
+    monto: '10'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:39:01'
+  DetalleRecursoGastosOperacion_2:
+    DetalleRecurso: DetalleRecurso_1
+    tipo_de_gasto: '2'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecursoGastosOperacion_3:
+    DetalleRecurso: DetalleRecurso_1
+    tipo_de_gasto: '3'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecursoGastosOperacion_4:
+    DetalleRecurso: DetalleRecurso_1
+    tipo_de_gasto: '5'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecursoGastosOperacion_5:
+    DetalleRecurso: DetalleRecurso_2
+    tipo_de_gasto: '1'
+    monto: '20'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:39:01'
+  DetalleRecursoGastosOperacion_6:
+    DetalleRecurso: DetalleRecurso_2
+    tipo_de_gasto: '2'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecursoGastosOperacion_7:
+    DetalleRecurso: DetalleRecurso_2
+    tipo_de_gasto: '3'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+  DetalleRecursoGastosOperacion_8:
+    DetalleRecurso: DetalleRecurso_2
+    tipo_de_gasto: '5'
+    monto: '0'
+    created_at: '2013-01-21 19:34:12'
+    updated_at: '2013-01-21 19:34:12'
+NotaProductividad:
+  NotaProductividad_1:
+    Evaluacion: Evaluacion_1
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_1
+    nota: '0'
+    created_at: '2013-01-22 11:57:34'
+    updated_at: '2013-01-22 11:57:34'
+  NotaProductividad_2:
+    Evaluacion: Evaluacion_1
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_2
+    nota: '0'
+    created_at: '2013-01-22 11:57:34'
+    updated_at: '2013-01-22 11:57:34'
+  NotaProductividad_3:
+    Evaluacion: Evaluacion_1
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_3
+    nota: '0'
+    created_at: '2013-01-22 11:57:34'
+    updated_at: '2013-01-22 11:57:34'
+  NotaProductividad_4:
+    Evaluacion: Evaluacion_1
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_4
+    nota: '0'
+    created_at: '2013-01-22 11:57:34'
+    updated_at: '2013-01-22 11:57:34'
+  NotaProductividad_5:
+    Evaluacion: Evaluacion_1
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_5
+    nota: '0'
+    created_at: '2013-01-22 11:57:34'
+    updated_at: '2013-01-22 11:57:34'
+  NotaProductividad_6:
+    Evaluacion: Evaluacion_1
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_6
+    nota: '0'
+    created_at: '2013-01-22 11:57:34'
+    updated_at: '2013-01-22 11:57:34'
+  NotaProductividad_7:
+    Evaluacion: Evaluacion_2
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_1
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaProductividad_8:
+    Evaluacion: Evaluacion_2
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_2
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaProductividad_9:
+    Evaluacion: Evaluacion_2
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_3
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaProductividad_10:
+    Evaluacion: Evaluacion_2
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_4
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaProductividad_11:
+    Evaluacion: Evaluacion_2
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_5
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'
+  NotaProductividad_12:
+    Evaluacion: Evaluacion_2
+    PorcentajeProductividadConcurso: PorcentajeProductividadConcurso_6
+    nota: '0'
+    created_at: '2013-01-22 11:58:11'
+    updated_at: '2013-01-22 11:58:11'

@@ -1,0 +1,75 @@
+<?php if ($sf_user->hasFlash('error')): ?>
+  <div class="flash_error"><?php echo html_entity_decode($sf_user->getFlash('error')) ?></div>
+<?php endif ?>
+<?php if ($sf_user->hasFlash('notice')): ?>
+  <div class="flash_notice"><?php echo html_entity_decode($sf_user->getFlash('notice')) ?></div>
+<?php endif ?>
+<?php if ($sf_user->hasFlash('cierre')): ?>
+  <div class="flash_notice"><?php echo html_entity_decode($sf_user->getFlash('cierre')) ?></div>
+<?php endif ?>
+<?php //echo count($persona->getPostulacionesDondeSoy(1))?>
+<?php //foreach($persona->getParticipantesPostulacion() as $participante_postulacion):?>
+<?php //echo $participante_postulacion->getPersonaConcurso()->getConcurso()->getAcronimo()?>
+<?php //endforeach;?>
+
+<div class="contenedor_usuario">
+<table>
+<tr>
+<th>Nombre:</th><td><?php echo $persona->getNombre()?> <?php echo $persona->getApellido1()?> <?php echo $persona->getApellido2()?></td>
+</tr>
+<tr>
+<th>Tipo profesor:</th><td><?php echo $persona->getTipoProfesor()?></td>
+</tr>
+</table>
+</div>
+<div class="concursos" id="postulaciones_en_curso">
+<span><strong>Postulaciones en curso</strong> <br /></span>
+<ul>
+<?php foreach($postulaciones_en_curso as $postulacion_en_curso):?>
+  <?php if($postulacion_en_curso->getConcurso()->getAcronimo() == 'di_pia'):?>
+    <?php if($persona->getTipoProfesor()->getNumeroTipo() == 1):?>
+	    <?php $tipo_pia = 'Iniciación';?>  
+	  <?php else:?>
+	    <?php $tipo_pia = 'Regular)';?>  
+	  <?php endif;?> 
+	  <li><?php echo link_to($postulacion_en_curso->getConcurso()->getNombreConcurso().' '.$tipo_pia, 'postular/'.$postulacion_en_curso->getId().'?etapa=1&paso=1');?> <?php echo link_to('[Anular]', 'postulacion/delete?id='.$postulacion_en_curso->getId(), array('method' => 'delete', 'confirm' => 'Esta seguro de anular la postulacion. Esto eliminara todos los datos asociados a ella?')) ?></li>
+	  <?php else:?>
+	    <li><?php echo link_to($postulacion_en_curso->getConcurso()->getNombreConcurso(), 'postular/'.$postulacion_en_curso->getId().'?etapa=1&paso=1');?> <?php echo link_to('[Anular]', 'postulacion/delete?id='.$postulacion_en_curso->getId(), array('method' => 'delete', 'confirm' => 'Esta seguro de anular la postulacion. Esto eliminara todos los datos asociados a ella?')) ?></li>
+	  <?php endif;?>
+<?php endforeach;?>
+</ul>
+</div>
+<div class="concursos" id="postulaciones_disponibles">
+<span><strong>Postulaciones disponibles</strong></span>
+<ul >
+<?php foreach($concursos_disponibles as $concurso_v):?>
+  <?php if($concurso_v->getAcronimo() == 'di_pia'):?>
+	  <?php if($persona->getTipoProfesor()->getNumeroTipo() == 1):?>
+	    <?php $tipo_pia = '(Iniciación)';?>  
+	  <?php else:?>
+	    <?php $tipo_pia = '(Regular)';?>  
+	  <?php endif;?>  
+	  <li><?php echo link_to($concurso_v->getNombreConcurso().' '.$tipo_pia, 'persona/inicializarPostulacion/?acronimo='.$concurso_v->getAcronimo())?></li>
+  <?php else:?>
+    <li><?php echo link_to($concurso_v->getNombreConcurso(), 'persona/inicializarPostulacion/?acronimo='.$concurso_v->getAcronimo())?></li>
+  <?php endif;?>
+<?php endforeach;?>
+</ul>
+</div>
+<div class="concursos" id="postulaciones_enviadas">
+<span><strong>Postulaciones enviadas</strong></span>
+<ul >
+<?php foreach($postulaciones_enviadas as $postulacion_enviada):?>
+  <?php if($postulacion_enviada->getConcurso()->getAcronimo() == 'di_pia'):?>
+  	<?php if($persona->getTipoProfesor()->getNumeroTipo() == 1):?>
+	    <?php $tipo_pia = '(Iniciación)';?>  
+	  <?php else:?>
+	    <?php $tipo_pia = '(Regular)';?>  
+	  <?php endif;?> 
+  	<li><?php echo $postulacion_enviada->getConcurso().' '.$tipo_pia?> <?php echo link_to('[Ver PDF]',public_path('uploads/postulaciones_pdf/'.$postulacion_enviada->getRutaPdfPostulacion()))?></li>
+	<?php else:?>
+	  <li><?php echo $postulacion_enviada->getConcurso()?> <?php echo link_to('[Ver PDF]',public_path('uploads/postulaciones_pdf/'.$postulacion_enviada->getRutaPdfPostulacion()))?></li>
+	<?php endif;?>
+<?php endforeach;?>
+</ul>
+</div>

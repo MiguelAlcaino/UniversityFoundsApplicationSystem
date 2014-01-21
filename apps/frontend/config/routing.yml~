@@ -1,0 +1,37 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: persona, action: login }
+
+agregar_investigador_externo:
+  url: /postular/agregar_externo/:id_postulacion
+  param: {module: persona_externa, action: new}
+  
+agregar_tesista:
+  url: /postular/agregar_tesista/:id_postulacion
+  param: {module: tesista, action: new}
+
+editar_cv:
+  url: /editar_cv/:id
+  param: {module: persona, action: editarCV}
+
+nueva_password:
+  url: /nuevaPassword/:persona_id/:token_recuperar_password
+  param: {module: persona, action: recuperarPassword}
+
+postular:
+  url: /postular/:id_postulacion/*
+  param: {module: persona, action: postular}
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+
+
+default:
+  url:   /:module/:action/*

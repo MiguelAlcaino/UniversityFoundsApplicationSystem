@@ -1,0 +1,13 @@
+Pregunta:
+  pregunta11:
+    Encuesta: encuesta_1
+    texto_pregunta: pregunta 1
+  pregunta12:
+    Encuesta: encuesta_1
+    texto_pregunta: pregunta 2
+  pregunta13:
+    Encuesta: encuesta_1
+    texto_pregunta: pregunta 3
+  pregunta14:
+    Encuesta: encuesta_1
+    texto_pregunta: pregunta 4

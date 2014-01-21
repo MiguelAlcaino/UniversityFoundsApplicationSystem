@@ -1,0 +1,42 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PersonaConcurso
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          persona_concurso_postulaciones_evaluadas
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        sexo_director:
+          label: 'Sexo'
+        unidad_academica_director:
+          label: 'U. Académica'
+        tipo_profesor_director:
+          label: 'Jerarquía'
+      list:
+        display: [id, codigo_proyecto, titulo, _persona, sexo_director, tipo_profesor_director, unidad_academica_director, concurso, _tesista, esta_aprobado, nota_final, fecha_envio, _codigo_proyecto_descarga]
+        object_actions:
+          editar:
+            action: editar
+            label: 'Editar evaluación final'
+          crear_convenio:
+            action: crearConvenio
+            label: 'Crear Convenio'
+          crear_evaluacion:
+            action: crearEvaluacion
+            label: 'Crear Evaluación DOC'
+          enviar_evaluacion:
+            action: enviarEvaluacion
+            label: 'Enviar Evaluación'
+      filter:
+        display: [id, concurso_id, estado, estado_evaluacion, esta_aprobado]
+      form:    ~
+      edit:    ~
+      new:     ~

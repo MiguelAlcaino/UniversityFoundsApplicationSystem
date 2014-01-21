@@ -1,0 +1,160 @@
+porcentaje_evaluacion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PorcentajeEvaluacion
+    module:               porcentaje_evaluacion_propuesta
+    prefix_path:          /porcentaje_evaluacion_propuesta
+    column:               id
+    with_wildcard_routes: true
+
+evaluacion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Evaluacion
+    module:               evaluacion1
+    prefix_path:          /evaluacion1
+    column:               id
+    with_wildcard_routes: true
+
+persona_sistema:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PersonaSistema
+    module:               persona_sistema
+    prefix_path:          /persona_sistema
+    column:               id
+    with_wildcard_routes: true
+
+persona_concurso_evaluacion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PersonaConcurso
+    module:               evaluacion
+    prefix_path:          /evaluacion
+    column:               id
+    with_wildcard_routes: true
+
+tesista:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Tesista
+    module:               tesista
+    prefix_path:          /tesista
+    column:               id
+    with_wildcard_routes: true
+
+persona_externa:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PersonaExterna
+    module:               persona_externa
+    prefix_path:          /persona_externa
+    column:               id
+    with_wildcard_routes: true
+
+participante_postulacion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ParticipantePostulacion
+    module:               participante_postulacion
+    prefix_path:          /participante_postulacion
+    column:               id
+    with_wildcard_routes: true
+
+tipo_archivo:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                TipoArchivo
+    module:               tipo_archivo
+    prefix_path:          /tipo_archivo
+    column:               id
+    with_wildcard_routes: true
+
+item:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Item
+    module:               item
+    prefix_path:          /item
+    column:               id
+    with_wildcard_routes: true
+
+item_concurso:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ItemConcurso
+    module:               item_concurso
+    prefix_path:          /item_concurso
+    column:               id
+    with_wildcard_routes: true
+
+tipo_profesor:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                TipoProfesor
+    module:               tipo_profesor
+    prefix_path:          /tipo_profesor
+    column:               id
+    with_wildcard_routes: true
+
+convocatoria:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Convocatoria
+    module:               convocatoria
+    prefix_path:          /convocatoria
+    column:               id
+    with_wildcard_routes: true
+
+persona_concurso:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PersonaConcurso
+    module:               postulacion
+    prefix_path:          /postulacion
+    column:               id
+    with_wildcard_routes: true
+
+concurso:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Concurso
+    module:               concurso
+    prefix_path:          /concurso
+    column:               id
+    with_wildcard_routes: true
+
+encuesta:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Encuesta
+    module:               encuesta
+    prefix_path:          /encuesta
+    column:               id
+    with_wildcard_routes: true
+
+persona:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Persona
+    module:               persona
+    prefix_path:          /persona
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

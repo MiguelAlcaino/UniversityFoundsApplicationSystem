@@ -1,0 +1,44 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+#all:
+all:
+  numero_inicio_codigo_proyecto: 301
+  numero_final_codigo_proyecto: 499
+  numero_siguiente_codigo_proyecto_anio_anterior: 449
+  sufijo_cuenta_di: '037'
+  path_subida_cv_pnj: /home/sfprojects/postulacion_interna_di/web/uploads/curriculum_pnj
+  path_lib: /home/sfprojects/postulacion_interna_di/lib
+  path_subida_postulaciones: /home/sfprojects/postulacion_interna_di/web/uploads/postulaciones_pdf
+  path_subida_archivos: /home/sfprojects/postulacion_interna_di/web/uploads/pdfs
+  path_convenios: /home/sfprojects/postulacion_interna_di/web/uploads/convenios
+  path_evaluaciones: /home/sfprojects/postulacion_interna_di/web/uploads/evaluaciones
+  path_evaluaciones_finales: /home/sfprojects/postulacion_interna_di/web/uploads/evaluaciones_finales
+  email_sistema: sistema.proyectos.di@ucv.cl
+  .array:
+    concursos_asociados:
+      di_iniciacion: iniciacion
+      di_artes: artes
+      di_sello_valorico: sello_valorico
+      di_pia: pia
+      di_apoyo_tesis_doctoral: tesis
+  
+    concursos_jerarquizados:
+      di_regular: regular
+      di_artes: artes
+      di_sello_valorico: sello_valorico
+      di_pia: pia
+      di_apoyo_tesis_doctoral: tesis
+  
+  
+    concursos_adscritos:
+      di_regular: regular
+      di_artes: artes
+      di_sello_valorico: sello_valorico
+      di_apoyo_tesis_doctoral: tesis
+      
+    concursos_pnj:
+      di_iniciacion: iniciacion
+      di_artes: artes
+      di_sello_valorico: sello_valorico

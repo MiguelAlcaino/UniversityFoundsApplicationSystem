@@ -1,0 +1,16 @@
+<?php if($persona_concurso->getPersona()->getSexo() == 'M'):?>Estimado Profesor<?php else:?>Estimada Profesora<?php endif?>.
+
+Junto con saludarle, adjunto la evaluación correspondiente a su postulación a la Convocatoria de Proyectos Internos DI 2013.
+
+Cordialmente,
+Paula A. Rojas S.
+Directora de Investigación, PUCV
+Av Brasil 2950, Valparaíso, 227 3286-3268
+
+Profesor Escuela de Ingeniería Mecánica, PUCV Av Los Carrera, Quilpué, 227 4483- 4472
+
+Pontificia Universidad Católica de Valparaíso
+
+
+Antes de imprimir este e-mail piense en el medioambiente / Before printing this e-mail please consider your environmental responsibility.
+

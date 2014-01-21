@@ -1,0 +1,53 @@
+Persona:
+  miguel_alcaino:
+    TipoProfesor: asociado
+    UnidadAcademica: ingenieria_informatica
+    rut: 16759248
+    dv: 1
+    nombre: Miguel Andres
+    apellido1: Alcaino
+    apellido2: Avila
+    password: <?php echo MD5('cacuca')?>
+    telefono: 78939789
+    email: miguel.alcaino@ogb.cl
+    estado_login: 1
+  luis_casanova:
+    TipoProfesor: asociado
+    UnidadAcademica: ingenieria_informatica
+    rut: 16364084
+    dv: 8
+    nombre: Luis Bernardo
+    apellido1: Casanova
+    apellido2: Uribe
+    telefono: 55555555
+    email: dii.proyectos1@ucv.cl
+  carlos_osorio:
+    TipoProfesor: jerarquizado
+    UnidadAcademica: ingenieria_informatica
+    rut: 6948517
+    dv: 0
+    nombre: Carlos Hector
+    apellido1: Osorio
+    apellido2: Matzke
+    telefono: 666666666
+    email: dii.soporte@ucv.cl
+  francisco_rocha:
+    TipoProfesor: jerarquizado
+    UnidadAcademica: ingenieria_informatica
+    rut: 13543764
+    dv: 6
+    nombre: Francisco
+    apellido1: Rocha
+    apellido2: Solis
+    telefono: 7777777
+    email: dii.proyectos4@ucv.cl
+  maria_jose_iriarte:
+    TipoProfesor: asociado
+    UnidadAcademica: ingenieria_informatica
+    rut: 15720315
+    dv: 0
+    nombre: Maria Jose
+    apellido1: Iriarte
+    apellido2: Ahumada
+    telefono: 88888888
+    email: dii.proyectos2@ucv.cl

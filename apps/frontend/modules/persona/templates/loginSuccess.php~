@@ -1,0 +1,46 @@
+<?php if ($sf_user->hasFlash('notice')): ?>
+	<div class="flash_notice"><strong><?php echo html_entity_decode($sf_user->getFlash('notice')) ?></strong></div>
+<?php endif ?>
+<div class="flash_notice" style="text-align: left;">
+<ul>
+<li>Si usted est&aacute; ingresando por primera vez al sistema y no tiene una contrase&ntilde;a asociada, haga <?php echo link_to('CLICK AQU&Iacute;','persona/password1')?> .</li>
+<li>Si usted es un profesor de categor&iacute;a distinta a "Asociado", "Jerarquizado" o "Adscrito", debe registrarse en el sistema <?php echo link_to('AQU&Iacute;','persona/nuevoProfesorNoJerarquizado')?>. Dentro de poco le enviaremos una respuesta a su
+ correo electr&oacute;nico con su contrase&ntilde;a para ingresar.</li>
+</ul>
+</div>
+<?php if ($sf_user->hasFlash('error')): ?>
+	<div class="flash_error"><?php echo html_entity_decode($sf_user->getFlash('error')) ?></div>
+<?php endif ?>
+<form action="<?php echo url_for('persona/login') ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
+
+<table class="centrado">
+	<tr>
+		<th>
+            <?php echo $form['rut']->renderLabel()?>
+            <?php echo $form['rut']->renderError()?><?php echo $form['dv']->renderError() ?>
+        </th>
+		<td>
+			<?php echo $form['rut']?>-<?php echo $form['dv']?>
+		</td>
+	</tr>
+    <tr>
+		<th><?php echo $form['password']->renderLabel()?><?php echo $form['password']->renderError()?></th>
+		<td>
+			<?php echo $form['password']?>
+			
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="right"><input type="submit" value="Ingresar" /><br /><?php echo link_to('[Recuperar contraseña]','persona/recuperarPassword')?></td>
+	</tr>
+	<tr>
+		<td colspan="2"></td>
+	</tr>	
+	
+</table>
+<div class="centrado"><a href="http://www.vriea.ucv.cl/wp-content/uploads/2012/01/Manual-de-uso1.pdf">[Manual de usuario]</a> <a href="http://www.vriea.ucv.cl/wp-content/uploads/2012/01/BASES-Proyectos-DI-20122.pdf">[Bases del concurso]</a>
+<a href="http://sourceforge.net/projects/pdfcreator/files/latest/download" target="_blank">[PDFCreator]</a> </div>
+<br />
+
+<?php echo $form->renderHiddenFields() ?>
+</form>
